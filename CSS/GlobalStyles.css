@@ -1,0 +1,22 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "MuseoModerno", cursive;
+}
+
+button {
+  color: #ffffff;
+  background-color: #e60012;
+  border-radius: 0.5em;
+  padding: 1em;
+  text-align: center;
+  outline: none;
+  border: none;
+  -webkit-transition: -webkit-transform 0.4s cubic-bezier(0.68, -0.6, 0.32, 1.6);
+  transition: -webkit-transform 0.4s cubic-bezier(0.68, -0.6, 0.32, 1.6);
+  transition: transform 0.4s cubic-bezier(0.68, -0.6, 0.32, 1.6);
+  transition: transform 0.4s cubic-bezier(0.68, -0.6, 0.32, 1.6), -webkit-transform 0.4s cubic-bezier(0.68, -0.6, 0.32, 1.6);
+}
+/*# sourceMappingURL=GlobalStyles.css.map */

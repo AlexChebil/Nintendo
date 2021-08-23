@@ -1,0 +1,25 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "MuseoModerno", cursive;
+}
+
+$N-Red: #e60012;
+$N-DarkRed: #b3000f;
+$N-LightBlue: #d6f0fa;
+$N-DarkBlue: #0b2b6b;
+$N-White: #ffffff;
+$N-Grey: #434242;
+$N-LightGrey: #efefef;
+
+button {
+  color: $N-White;
+  background-color: $N-Red;
+  border-radius: 0.5em;
+  padding: 1em;
+  text-align: center;
+  outline: none;
+  border: none;
+  transition: transform 0.4s cubic-bezier(0.68, -0.6, 0.32, 1.6);
+}

@@ -1,0 +1,23 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "MuseoModerno", cursive;
+}
+
+button {
+  color: #ffffff;
+  background-color: #e60012;
+  border-radius: 0.5em;
+  padding: 1em;
+  text-align: center;
+  outline: none;
+  border: none;
+}
+
+h1 {
+  background-color: #e60012;
+  color: #b3000f;
+}
+/*# sourceMappingURL=Styles.css.map */
