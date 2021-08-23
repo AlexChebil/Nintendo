@@ -30,6 +30,11 @@ nav #search {
   outline: none;
   width: 25em;
   border-bottom: 1px solid black;
+  position: relative;
+}
+
+nav #searchIcon {
+  position: relative;
 }
 
 nav #searchWall {
@@ -38,8 +43,40 @@ nav #searchWall {
   height: -moz-min-content;
   height: min-content;
   background-color: rgba(255, 0, 0, 0.219);
-  color: blue;
+  color: #434242;
   position: absolute;
+}
+
+nav #searchWall .searchWall-flexContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  padding-top: 5em;
+  -webkit-transform: translateX(-14em);
+          transform: translateX(-14em);
+}
+
+nav #searchWall .searchWall-flexContainer ul {
+  list-style: none;
+}
+
+nav #searchWall .searchWall-flexContainer ul li {
+  color: red;
+}
+
+nav #searchWall .box {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  width: 12em;
+  height: 6em;
+  margin: 0em 1em;
+  text-align: center;
+  background-color: #ffffff;
+  border: 3px solid #e60012;
 }
 
 nav .upperPart img {

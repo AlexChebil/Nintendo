@@ -6,14 +6,43 @@ nav {
     outline: none;
     width: 25em;
     border-bottom: 1px solid black;
+    position: relative;
+  }
+  #searchIcon {
+    position: relative;
   }
 
   #searchWall {
     width: 100vw;
     height: min-content;
     background-color: rgba(255, 0, 0, 0.219);
-    color: blue;
+    color: $N-Grey;
     position: absolute;
+
+    .searchWall-flexContainer {
+      display: flex;
+      justify-content: space-evenly;
+      padding-top: 5em;
+      transform: translateX(-14em);
+
+      ul {
+        list-style: none;
+
+        li {
+          color: red;
+        }
+      }
+    }
+
+    .box {
+      display: inline-flex;
+      width: 12em;
+      height: 6em;
+      margin: 0em 1em;
+      text-align: center;
+      background-color: $N-White;
+      border: 3px solid $N-Red;
+    }
   }
 
   .upperPart {
