@@ -14,10 +14,57 @@ button {
   text-align: center;
   outline: none;
   border: none;
+  -webkit-transition: -webkit-transform 0.4s cubic-bezier(0.68, -0.6, 0.32, 1.6);
+  transition: -webkit-transform 0.4s cubic-bezier(0.68, -0.6, 0.32, 1.6);
+  transition: transform 0.4s cubic-bezier(0.68, -0.6, 0.32, 1.6);
+  transition: transform 0.4s cubic-bezier(0.68, -0.6, 0.32, 1.6), -webkit-transform 0.4s cubic-bezier(0.68, -0.6, 0.32, 1.6);
 }
 
-h1 {
-  background-color: #e60012;
-  color: #b3000f;
+a {
+  text-decoration: none;
+  color: #434242;
+}
+
+nav #search {
+  border: none;
+  outline: none;
+  width: 25em;
+  border-bottom: 1px solid black;
+}
+
+nav #searchWall {
+  width: 100vw;
+  height: -webkit-min-content;
+  height: -moz-min-content;
+  height: min-content;
+  background-color: rgba(255, 0, 0, 0.219);
+  color: blue;
+  position: absolute;
+}
+
+nav .upperPart img {
+  position: relative;
+}
+
+nav .flexContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+}
+
+nav .flexContainer a {
+  padding: 0em 0.5em;
+  -webkit-transform: translateY(5em);
+          transform: translateY(5em);
+}
+
+nav .flexContainer a i {
+  padding: 0em 0.5em;
 }
 /*# sourceMappingURL=Styles.css.map */

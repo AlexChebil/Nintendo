@@ -19,4 +19,9 @@ button {
   transition: transform 0.4s cubic-bezier(0.68, -0.6, 0.32, 1.6);
   transition: transform 0.4s cubic-bezier(0.68, -0.6, 0.32, 1.6), -webkit-transform 0.4s cubic-bezier(0.68, -0.6, 0.32, 1.6);
 }
+
+a {
+  text-decoration: none;
+  color: #434242;
+}
 /*# sourceMappingURL=GlobalStyles.css.map */

@@ -4,3 +4,10 @@ button:hover {
   transform: scale(1.2);
   background-color: $N-DarkRed;
 }
+#search:hover {
+  border-bottom: 1px solid $N-Red;
+  color: $N-Red;
+}
+a:hover {
+  color: $N-Red;
+}

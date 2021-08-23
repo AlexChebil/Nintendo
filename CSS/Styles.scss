@@ -1,6 +1,37 @@
 @import "GlobalStyles";
 
-h1 {
-  background-color: $N-Red;
-  color: $N-DarkRed;
+nav {
+  #search {
+    border: none;
+    outline: none;
+    width: 25em;
+    border-bottom: 1px solid black;
+  }
+
+  #searchWall {
+    width: 100vw;
+    height: min-content;
+    background-color: rgba(255, 0, 0, 0.219);
+    color: blue;
+    position: absolute;
+  }
+
+  .upperPart {
+    img {
+      position: relative;
+    }
+  }
+
+  .flexContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    a {
+      padding: 0em 0.5em;
+      transform: translateY(5em);
+      i {
+        padding: 0em 0.5em;
+      }
+    }
+  }
 }

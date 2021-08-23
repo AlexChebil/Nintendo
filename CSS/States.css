@@ -20,9 +20,23 @@ button {
   transition: transform 0.4s cubic-bezier(0.68, -0.6, 0.32, 1.6), -webkit-transform 0.4s cubic-bezier(0.68, -0.6, 0.32, 1.6);
 }
 
+a {
+  text-decoration: none;
+  color: #434242;
+}
+
 button:hover {
   -webkit-transform: scale(1.2);
           transform: scale(1.2);
   background-color: #b3000f;
+}
+
+#search:hover {
+  border-bottom: 1px solid #e60012;
+  color: #e60012;
+}
+
+a:hover {
+  color: #e60012;
 }
 /*# sourceMappingURL=States.css.map */
