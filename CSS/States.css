@@ -40,13 +40,6 @@ a:hover {
   color: #e60012;
 }
 
-.box:hover {
-  -webkit-box-shadow: 5px 2.5px 12px #e60012;
-          box-shadow: 5px 2.5px 12px #e60012;
-  -webkit-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
-}
-
 nav #searchWall .searchWall-flexContainer ul li:hover {
   border-bottom: 1px solid black;
   color: #b3000f;

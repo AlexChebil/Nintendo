@@ -11,10 +11,7 @@ button:hover {
 a:hover {
   color: $N-Red;
 }
-.box:hover {
-  box-shadow: 5px 2.5px 12px $N-Red;
-  transition: all 0.3s ease-in-out;
-}
+
 nav #searchWall .searchWall-flexContainer ul li:hover {
   border-bottom: 1px solid black;
   color: $N-DarkRed;

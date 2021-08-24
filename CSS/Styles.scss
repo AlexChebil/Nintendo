@@ -1,5 +1,5 @@
 @import "GlobalStyles";
-
+// COMMENT THIS BEFORE ANYTHING ELSE
 nav {
   #search {
     border: none;
@@ -23,25 +23,63 @@ nav {
       display: flex;
       justify-content: space-evenly;
       padding-top: 5em;
-      transform: translateX(-14em);
+      transform: translateX(-9em);
 
       ul {
         list-style: none;
 
         li {
           color: red;
+          line-height: 1.75em;
         }
+      }
+    }
+
+    .cards {
+      :nth-child(1n) {
+        transition: all 0.3s ease-in-out;
+      }
+      :nth-child(2) {
+        border-top: 25px solid rgb(255, 208, 0);
+        border-bottom: 25px solid rgb(255, 208, 0);
+      }
+      :nth-child(2):hover {
+        box-shadow: 0px 0px 5px 3px rgb(255, 208, 0);
+      }
+
+      :nth-child(3) {
+        border-top: 25px solid cyan;
+        border-bottom: 25px solid cyan;
+      }
+      :nth-child(3):hover {
+        box-shadow: 0px 0px 5px 3px cyan;
+      }
+
+      :nth-child(4) {
+        border-top: 25px solid $N-Red;
+        border-bottom: 25px solid $N-Red;
+      }
+      :nth-child(4):hover {
+        box-shadow: 0px 0px 5px 3px $N-Red;
       }
     }
 
     .box {
       display: inline-flex;
-      width: 12em;
-      height: 6em;
+      width: 17em;
+      height: 9em;
       margin: 0em 1em;
       text-align: center;
       background-color: $N-White;
-      border: 3px solid $N-Red;
+      p {
+        font-size: 1.25em;
+        width: 100%;
+        transform: translateY(1.5em);
+        font-weight: bolder;
+      }
+    }
+    h5 {
+      padding-bottom: 0.5em;
     }
   }
 
