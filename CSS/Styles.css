@@ -37,7 +37,7 @@ nav #searchIcon {
   position: relative;
 }
 
-nav #searchWall {
+nav .searchWall {
   width: 100vw;
   height: -webkit-min-content;
   height: -moz-min-content;
@@ -47,7 +47,7 @@ nav #searchWall {
   position: absolute;
 }
 
-nav #searchWall .searchWall-flexContainer {
+nav .searchWall .searchWall-flexContainer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -59,51 +59,59 @@ nav #searchWall .searchWall-flexContainer {
           transform: translateX(-9em);
 }
 
-nav #searchWall .searchWall-flexContainer ul {
+nav .searchWall .searchWall-flexContainer ul {
   list-style: none;
 }
 
-nav #searchWall .searchWall-flexContainer ul li {
+nav .searchWall .searchWall-flexContainer ul li {
   color: red;
   line-height: 1.75em;
 }
 
-nav #searchWall .cards :nth-child(1n) {
+nav .searchWall .cards :nth-child(1n) {
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
+  border-radius: 0.3em;
 }
 
-nav #searchWall .cards :nth-child(2) {
+nav .searchWall .cards :nth-child(2) {
+  border: 1px solid #ffd000;
   border-top: 25px solid #ffd000;
   border-bottom: 25px solid #ffd000;
 }
 
-nav #searchWall .cards :nth-child(2):hover {
+nav .searchWall .cards :nth-child(2):hover {
   -webkit-box-shadow: 0px 0px 5px 3px #ffd000;
           box-shadow: 0px 0px 5px 3px #ffd000;
 }
 
-nav #searchWall .cards :nth-child(3) {
+nav .searchWall .cards :nth-child(3) {
+  border: 1px solid cyan;
   border-top: 25px solid cyan;
   border-bottom: 25px solid cyan;
 }
 
-nav #searchWall .cards :nth-child(3):hover {
+nav .searchWall .cards :nth-child(3):hover {
   -webkit-box-shadow: 0px 0px 5px 3px cyan;
           box-shadow: 0px 0px 5px 3px cyan;
 }
 
-nav #searchWall .cards :nth-child(4) {
+nav .searchWall .cards :nth-child(4) {
+  border: 1px solid #e60012;
   border-top: 25px solid #e60012;
   border-bottom: 25px solid #e60012;
 }
 
-nav #searchWall .cards :nth-child(4):hover {
-  -webkit-box-shadow: 0px 0px 5px 3px #e60012;
-          box-shadow: 0px 0px 5px 3px #e60012;
+nav .searchWall .cards :nth-child(4):hover {
+  -webkit-box-shadow: 0px 0px 5px 0.5px #e60012;
+          box-shadow: 0px 0px 5px 0.5px #e60012;
 }
 
-nav #searchWall .box {
+nav .searchWall .cards h5 {
+  padding-bottom: 0.5em;
+}
+
+nav .searchWall .card {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
@@ -114,16 +122,23 @@ nav #searchWall .box {
   background-color: #ffffff;
 }
 
-nav #searchWall .box p {
+nav .searchWall .card p {
   font-size: 1.25em;
-  width: 100%;
   -webkit-transform: translateY(1.5em);
           transform: translateY(1.5em);
   font-weight: bolder;
 }
 
-nav #searchWall h5 {
-  padding-bottom: 0.5em;
+nav .searchWall {
+  display: none;
+  -webkit-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
+}
+
+nav .searchWall.active {
+  display: block;
+  -webkit-transition: all 10s ease-in-out;
+  transition: all 10s ease-in-out;
 }
 
 nav .upperPart img {

@@ -40,7 +40,7 @@ a:hover {
   color: #e60012;
 }
 
-nav #searchWall .searchWall-flexContainer ul li:hover {
+nav .searchWall .searchWall-flexContainer ul li:hover {
   border-bottom: 1px solid black;
   color: #b3000f;
   cursor: pointer;

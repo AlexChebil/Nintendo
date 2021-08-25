@@ -1,6 +1,7 @@
 @import "GlobalStyles";
 // COMMENT THIS BEFORE ANYTHING ELSE
 nav {
+  // search bar and it's icon
   #search {
     border: none;
     outline: none;
@@ -12,7 +13,8 @@ nav {
     position: relative;
   }
 
-  #searchWall {
+  //the wall that appears when clicking the search bar
+  .searchWall {
     width: 100vw;
     height: min-content;
     background-color: rgba(255, 0, 0, 0.219);
@@ -24,7 +26,7 @@ nav {
       justify-content: space-evenly;
       padding-top: 5em;
       transform: translateX(-9em);
-
+      // "Suggestions"/"Nintendo Switch" list
       ul {
         list-style: none;
 
@@ -34,12 +36,18 @@ nav {
         }
       }
     }
-
+    // three colorful cards on the right
     .cards {
+      //smooth transition for all of them
+
       :nth-child(1n) {
         transition: all 0.3s ease-in-out;
+        border-radius: 0.3em;
       }
+
+      // the cards styling with nth-child
       :nth-child(2) {
+        border: 1px solid rgb(255, 208, 0);
         border-top: 25px solid rgb(255, 208, 0);
         border-bottom: 25px solid rgb(255, 208, 0);
       }
@@ -48,6 +56,7 @@ nav {
       }
 
       :nth-child(3) {
+        border: 1px solid cyan;
         border-top: 25px solid cyan;
         border-bottom: 25px solid cyan;
       }
@@ -56,40 +65,54 @@ nav {
       }
 
       :nth-child(4) {
+        border: 1px solid $N-Red;
         border-top: 25px solid $N-Red;
         border-bottom: 25px solid $N-Red;
       }
       :nth-child(4):hover {
-        box-shadow: 0px 0px 5px 3px $N-Red;
+        box-shadow: 0px 0px 5px 0.5px $N-Red;
+      }
+      h5 {
+        padding-bottom: 0.5em;
       }
     }
 
-    .box {
+    .card {
       display: inline-flex;
       width: 17em;
       height: 9em;
       margin: 0em 1em;
       text-align: center;
       background-color: $N-White;
+
       p {
         font-size: 1.25em;
-        width: 100%;
+        //transfrom to align the text vertically "Y-axis"
         transform: translateY(1.5em);
         font-weight: bolder;
       }
     }
-    h5 {
-      padding-bottom: 0.5em;
-    }
   }
 
+  .searchWall {
+    display: none;
+    transition: all 1s ease-in-out;
+  }
+  .searchWall.active {
+    display: block;
+    transition: all 10s ease-in-out;
+  }
+
+  // the upper-part of the navbar
   .upperPart {
     img {
+      //nintendo img
       position: relative;
     }
   }
 
   .flexContainer {
+    // support/wishlist and login/sign up part
     display: flex;
     justify-content: space-between;
     align-items: baseline;
