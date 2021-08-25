@@ -4,17 +4,46 @@ button:hover {
   transform: scale(1.2);
   background-color: $N-DarkRed;
 }
+
 #search:hover {
   border-bottom: 1px solid $N-Red;
   color: $N-Red;
 }
+
 a:hover {
   color: $N-Red;
 }
-
+//nav searchwall list components
 nav .searchWall .searchWall-flexContainer ul li:hover {
   border-bottom: 1px solid black;
   color: $N-DarkRed;
   cursor: pointer;
   transition: all 0.1s ease-in-out;
+}
+
+#searchIcon.active {
+  color: $N-Red;
+}
+
+#backspaceIcon.active {
+  display: inline-block;
+  color: $N-Grey;
+}
+
+.searchWall {
+  display: none;
+}
+
+.searchWall.active {
+  display: block;
+  transition: all 1s ease-in-out;
+}
+
+.dropdown-item:hover {
+  background-color: $N-Red;
+  color: $N-White;
+}
+// : active not .active
+.dropdown-item:active {
+  background-color: $N-Red;
 }

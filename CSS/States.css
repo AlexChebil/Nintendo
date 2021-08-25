@@ -6,6 +6,10 @@
   font-family: "MuseoModerno", cursive;
 }
 
+body {
+  background-color: #d6f0fa;
+}
+
 button {
   color: #ffffff;
   background-color: #e60012;
@@ -46,5 +50,33 @@ nav .searchWall .searchWall-flexContainer ul li:hover {
   cursor: pointer;
   -webkit-transition: all 0.1s ease-in-out;
   transition: all 0.1s ease-in-out;
+}
+
+#searchIcon.active {
+  color: #e60012;
+}
+
+#backspaceIcon.active {
+  display: inline-block;
+  color: #434242;
+}
+
+.searchWall {
+  display: none;
+}
+
+.searchWall.active {
+  display: block;
+  -webkit-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
+}
+
+.dropdown-item:hover {
+  background-color: #e60012;
+  color: #ffffff;
+}
+
+.dropdown-item:active {
+  background-color: #e60012;
 }
 /*# sourceMappingURL=States.css.map */

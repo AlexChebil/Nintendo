@@ -12,6 +12,9 @@ nav {
   #searchIcon {
     position: relative;
   }
+  #backspaceIcon {
+    display: none;
+  }
 
   //the wall that appears when clicking the search bar
   .searchWall {
@@ -24,6 +27,7 @@ nav {
     .searchWall-flexContainer {
       display: flex;
       justify-content: space-evenly;
+      flex-wrap: wrap;
       padding-top: 5em;
       transform: translateX(-9em);
       // "Suggestions"/"Nintendo Switch" list
@@ -94,15 +98,6 @@ nav {
     }
   }
 
-  .searchWall {
-    display: none;
-    transition: all 1s ease-in-out;
-  }
-  .searchWall.active {
-    display: block;
-    transition: all 10s ease-in-out;
-  }
-
   // the upper-part of the navbar
   .upperPart {
     img {
@@ -122,6 +117,30 @@ nav {
       i {
         padding: 0em 0.5em;
       }
+    }
+  }
+}
+
+.bottomPart {
+  .dropdown-toggle {
+    color: $N-Grey;
+    background-color: rgba(255, 255, 255, 0);
+    outline: none;
+    border: none;
+  }
+  ul {
+    width: 100%;
+    i {
+      //border: 2px solid $N-Grey;
+      padding: 0.1em 0.4em;
+      font-size: 3em;
+      margin: 0.3em 0em;
+    }
+    li {
+      display: inline-block;
+      transform: translateX(20em);
+      margin: 0 3%;
+      text-align: center;
     }
   }
 }

@@ -13,6 +13,10 @@ $N-White: #ffffff;
 $N-Grey: #434242;
 $N-LightGrey: #efefef;
 
+body {
+  background-color: $N-LightBlue;
+}
+
 button {
   color: $N-White;
   background-color: $N-Red;

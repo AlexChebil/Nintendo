@@ -6,6 +6,10 @@
   font-family: "MuseoModerno", cursive;
 }
 
+body {
+  background-color: #d6f0fa;
+}
+
 button {
   color: #ffffff;
   background-color: #e60012;
