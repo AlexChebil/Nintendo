@@ -7,7 +7,7 @@
 }
 
 body {
-  background-color: #d6f0fa;
+  background-color: #ffffff;
 }
 
 button {
@@ -27,6 +27,25 @@ button {
 a {
   text-decoration: none;
   color: #434242;
+}
+
+.burgerOn {
+  display: none;
+}
+
+.burgerMenu {
+  position: absolute;
+  z-index: 1;
+  right: 0.5em;
+  top: 1em;
+}
+
+.burgerMenu .burger {
+  width: 2.5em;
+  height: 0.5em;
+  background-color: blue;
+  margin-top: 0.25em;
+  right: 0px;
 }
 
 nav #search {
@@ -165,6 +184,41 @@ nav .flexContainer a i {
   padding: 0em 0.5em;
 }
 
+.bottomPart {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border: 1px solid #efefef;
+}
+
+.bottomPart div {
+  margin: 0 3em;
+}
+
+.bottomPart :nth-child(1n + 3) {
+  margin-top: 0.25em;
+}
+
+.bottomPart .dropdown-menu img {
+  padding: 1em;
+  background-color: #ffffff;
+  border-radius: 0.5em;
+  width: 15em;
+}
+
+.bottomPart .dropdown-menu :nth-child(2) img {
+  padding: 0.5em;
+  width: 7em;
+}
+
+.bottomPart .dropdown-menu :nth-child(3) img {
+  padding: 1.25em;
+  width: 5em;
+}
+
 .bottomPart .dropdown-toggle {
   color: #434242;
   background-color: rgba(255, 255, 255, 0);
@@ -173,7 +227,8 @@ nav .flexContainer a i {
 }
 
 .bottomPart ul {
-  width: 100%;
+  width: 100vw;
+  background-color: rgba(245, 245, 245, 0.329);
 }
 
 .bottomPart ul i {
@@ -188,5 +243,16 @@ nav .flexContainer a i {
           transform: translateX(20em);
   margin: 0 3%;
   text-align: center;
+  cursor: pointer;
+}
+
+.bottomPart .second-dropdown-item {
+  padding: 1.5em;
+}
+
+.bottomPart .secondUl li {
+  -webkit-transform: translateX(30em);
+          transform: translateX(30em);
+  margin: 0 2vw;
 }
 /*# sourceMappingURL=Styles.css.map */

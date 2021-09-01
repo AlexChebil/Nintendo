@@ -1,5 +1,22 @@
 @import "GlobalStyles";
 // COMMENT THIS BEFORE ANYTHING ELSE
+.burgerOn {
+  display: none;
+}
+//BurgerMenu
+.burgerMenu {
+  position: absolute;
+  z-index: 1;
+  right: 0.5em;
+  top: 1em;
+  .burger {
+    width: 2.5em;
+    height: 0.5em;
+    background-color: blue;
+    margin-top: 0.25em;
+    right: 0px;
+  }
+}
 nav {
   // search bar and it's icon
   #search {
@@ -122,6 +139,38 @@ nav {
 }
 
 .bottomPart {
+  display: flex;
+  justify-content: center;
+  border: 1px solid $N-LightGrey;
+  div {
+    margin: 0 3em;
+  }
+  :nth-child(1n + 3) {
+    margin-top: 0.25em;
+  }
+
+  //transforming bootstrap's dropdown
+  .dropdown-menu {
+    img {
+      padding: 1em;
+      background-color: $N-White;
+      border-radius: 0.5em;
+      width: 15em;
+    }
+    :nth-child(2) {
+      img {
+        padding: 0.5em;
+        width: 7em;
+      }
+    }
+    :nth-child(3) {
+      img {
+        padding: 1.25em;
+        width: 5em;
+      }
+    }
+  }
+
   .dropdown-toggle {
     color: $N-Grey;
     background-color: rgba(255, 255, 255, 0);
@@ -129,9 +178,9 @@ nav {
     border: none;
   }
   ul {
-    width: 100%;
+    width: 100vw;
+    background-color: rgba(245, 245, 245, 0.329);
     i {
-      //border: 2px solid $N-Grey;
       padding: 0.1em 0.4em;
       font-size: 3em;
       margin: 0.3em 0em;
@@ -141,6 +190,16 @@ nav {
       transform: translateX(20em);
       margin: 0 3%;
       text-align: center;
+      cursor: pointer;
+    }
+  }
+  .second-dropdown-item {
+    padding: 1.5em;
+  }
+  .secondUl {
+    li {
+      transform: translateX(30em);
+      margin: 0 2vw;
     }
   }
 }

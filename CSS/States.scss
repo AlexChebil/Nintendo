@@ -13,6 +13,13 @@ button:hover {
 a:hover {
   color: $N-Red;
 }
+//burgerMenu
+.burgerMenu:active {
+  .burger {
+    background-color: purple;
+  }
+}
+
 //nav searchwall list components
 nav .searchWall .searchWall-flexContainer ul li:hover {
   border-bottom: 1px solid black;
@@ -38,6 +45,18 @@ nav .searchWall .searchWall-flexContainer ul li:hover {
   display: block;
   transition: all 1s ease-in-out;
 }
+//dropdown menus
+li:hover {
+  color: red;
+}
+.dropdown-menu {
+  .second-dropdown-item:hover {
+    background-color: rgba(255, 255, 255, 0);
+    img:hover {
+      background-color: $N-Red;
+    }
+  }
+}
 
 .dropdown-item:hover {
   background-color: $N-Red;
@@ -46,4 +65,17 @@ nav .searchWall .searchWall-flexContainer ul li:hover {
 // : active not .active
 .dropdown-item:active {
   background-color: $N-Red;
+}
+
+//dropdown button customisation, need both classes to work !! .dropdown-toggle & .btn-secondary
+.dropdown-toggle:active,
+.dropdown-toggle:focus,
+.dropdown-toggle:hover {
+  color: $N-Red;
+  box-shadow: none;
+  transform: none;
+}
+
+.btn-secondary:active:focus {
+  box-shadow: none;
 }

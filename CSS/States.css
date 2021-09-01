@@ -7,7 +7,7 @@
 }
 
 body {
-  background-color: #d6f0fa;
+  background-color: #ffffff;
 }
 
 button {
@@ -44,6 +44,10 @@ a:hover {
   color: #e60012;
 }
 
+.burgerMenu:active .burger {
+  background-color: purple;
+}
+
 nav .searchWall .searchWall-flexContainer ul li:hover {
   border-bottom: 1px solid black;
   color: #b3000f;
@@ -71,6 +75,18 @@ nav .searchWall .searchWall-flexContainer ul li:hover {
   transition: all 1s ease-in-out;
 }
 
+li:hover {
+  color: red;
+}
+
+.dropdown-menu .second-dropdown-item:hover {
+  background-color: rgba(255, 255, 255, 0);
+}
+
+.dropdown-menu .second-dropdown-item:hover img:hover {
+  background-color: #e60012;
+}
+
 .dropdown-item:hover {
   background-color: #e60012;
   color: #ffffff;
@@ -78,5 +94,20 @@ nav .searchWall .searchWall-flexContainer ul li:hover {
 
 .dropdown-item:active {
   background-color: #e60012;
+}
+
+.dropdown-toggle:active,
+.dropdown-toggle:focus,
+.dropdown-toggle:hover {
+  color: #e60012;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  -webkit-transform: none;
+          transform: none;
+}
+
+.btn-secondary:active:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
 /*# sourceMappingURL=States.css.map */

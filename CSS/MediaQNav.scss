@@ -1,0 +1,30 @@
+@import "GlobalStyles";
+
+@media all and (max-width: 940px) {
+  .burgerOn {
+    display: block;
+    background-color: $N-LightGrey;
+    height: 4.5em;
+    :nth-child(2) {
+      position: absolute;
+      right: 4.5em;
+      top: 1.25em;
+    }
+  }
+  nav {
+    background-color: rgba(0, 255, 21, 0.822);
+    position: absolute;
+    width: min-content;
+    height: max-content;
+    right: 0;
+
+    .flexContainer {
+      flex-direction: column;
+    }
+    .bottomPart {
+      flex-direction: column;
+      line-height: 2.5em;
+      text-align: center;
+    }
+  }
+}
