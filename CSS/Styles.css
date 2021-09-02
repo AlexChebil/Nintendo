@@ -37,7 +37,7 @@ a {
   position: absolute;
   z-index: 1;
   right: 0.5em;
-  top: 1em;
+  top: 0.25em;
 }
 
 .burgerMenu .burger {
@@ -174,6 +174,10 @@ nav .flexContainer {
           align-items: baseline;
 }
 
+nav .flexContainer button {
+  display: none;
+}
+
 nav .flexContainer a {
   padding: 0em 0.5em;
   -webkit-transform: translateY(5em);
@@ -254,5 +258,11 @@ nav .flexContainer a i {
   -webkit-transform: translateX(30em);
           transform: translateX(30em);
   margin: 0 2vw;
+}
+
+main {
+  width: 100vw;
+  height: 100vh;
+  background-color: #d6f0fa;
 }
 /*# sourceMappingURL=Styles.css.map */

@@ -33,37 +33,109 @@ a {
   .burgerOn {
     display: block;
     background-color: #efefef;
-    height: 4.5em;
+    height: 3em;
+  }
+  .burgerOn img {
+    height: 3em;
   }
   .burgerOn :nth-child(2) {
     position: absolute;
     right: 4.5em;
-    top: 1.25em;
+    top: 0.75em;
   }
-  nav {
-    background-color: rgba(0, 255, 21, 0.822);
+  .nav {
+    display: none;
+  }
+  .nav.active {
+    display: block;
+    background-color: #ffffff;
     position: absolute;
-    width: -webkit-min-content;
-    width: -moz-min-content;
-    width: min-content;
-    height: -webkit-max-content;
-    height: -moz-max-content;
-    height: max-content;
+    width: 20em;
+    height: 100vh;
     right: 0;
   }
-  nav .flexContainer {
+  .nav.active img {
+    display: none;
+  }
+  .nav.active .flexContainer {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    margin-top: 1em;
+    margin-bottom: 0.5em;
   }
-  nav .bottomPart {
+  .nav.active .flexContainer input {
+    display: none;
+  }
+  .nav.active .flexContainer button {
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+    background-color: rgba(255, 255, 255, 0);
+    color: #434242;
+    font-size: 1.1em;
+    padding: 0;
+    line-height: 2em;
+    text-align: center;
+    margin-left: 0.25em;
+  }
+  .nav.active .flexContainer button:hover {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    color: #e60012;
+  }
+  .nav.active .flexContainer #searchIcon {
+    text-align: center;
+    margin-left: 7em;
+  }
+  .nav.active .flexContainer .flex2 {
+    width: 9.5em;
+    line-height: 2.5em;
+    text-align: center;
+    -webkit-transform: translateX(5em);
+            transform: translateX(5em);
+  }
+  .nav.active .flexContainer .flex2 :nth-child(3) {
+    display: none;
+  }
+  .nav.active .bottomPart {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
     line-height: 2.5em;
     text-align: center;
+  }
+  .searchWall.active {
+    width: 100vw;
+    height: 100vh;
+    left: -36em;
+    position: absolute;
+    top: -3em;
+  }
+  .searchWall.active #searchWall-flex1 {
+    text-align: center;
+    -webkit-transform: translateX(8em);
+            transform: translateX(8em);
+  }
+  .searchWall.active #searchWall-flex1 h5 {
+    margin-left: 1.5em;
+  }
+  .searchWall.active .cards {
+    text-align: center;
+    -webkit-transform: translateX(8.5em);
+            transform: translateX(8.5em);
+  }
+  .searchWall.active .cards :nth-child(2),
+  .searchWall.active .cards :nth-child(3) {
+    width: 25em;
+  }
+  .searchWall.active .cards :nth-child(4) {
+    width: 50em;
+  }
+  .searchWall.active .cards div {
+    margin-bottom: 1.5em;
   }
 }
 /*# sourceMappingURL=MediaQNav.css.map */

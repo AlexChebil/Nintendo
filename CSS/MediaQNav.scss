@@ -4,27 +4,111 @@
   .burgerOn {
     display: block;
     background-color: $N-LightGrey;
-    height: 4.5em;
+    height: 3em;
+    img {
+      height: 3em;
+    }
     :nth-child(2) {
       position: absolute;
       right: 4.5em;
-      top: 1.25em;
+      top: 0.75em;
     }
   }
-  nav {
-    background-color: rgba(0, 255, 21, 0.822);
+  .nav {
+    display: none;
+  }
+
+  .nav.active {
+    display: block;
+    background-color: $N-White;
     position: absolute;
-    width: min-content;
-    height: max-content;
+    width: 20em;
+    height: 100vh;
     right: 0;
+
+    img {
+      display: none;
+    }
 
     .flexContainer {
       flex-direction: column;
+      margin-top: 1em;
+      margin-bottom: 0.5em;
+
+      input {
+        display: none;
+      }
+
+      button {
+        display: inline-block;
+        position: relative;
+        z-index: 1;
+        background-color: rgba(255, 255, 255, 0);
+        color: $N-Grey;
+        font-size: 1.1em;
+        padding: 0;
+        line-height: 2em;
+        text-align: center;
+        margin-left: 0.25em;
+      }
+
+      button:hover {
+        transform: scale(1);
+        color: $N-Red;
+      }
+
+      #searchIcon {
+        text-align: center;
+        margin-left: 7em;
+      }
+
+      .flex2 {
+        //to make childs in a vertical position
+        width: 9.5em;
+        line-height: 2.5em;
+        // text align needed to center icons
+        text-align: center;
+        transform: translateX(5em);
+        :nth-child(3) {
+          display: none;
+        }
+      }
     }
+
     .bottomPart {
       flex-direction: column;
       line-height: 2.5em;
       text-align: center;
+    }
+  }
+  .searchWall.active {
+    width: 100vw;
+    height: 100vh;
+    left: -36em;
+    position: absolute;
+    top: -3em;
+    #searchWall-flex1 {
+      text-align: center;
+      transform: translateX(8em);
+      h5 {
+        margin-left: 1.5em;
+      }
+    }
+    .cards {
+      text-align: center;
+      transform: translateX(8.5em);
+      :nth-child(2),
+      :nth-child(3) {
+        width: 25em;
+      }
+
+      :nth-child(4) {
+        width: 50em;
+      }
+
+      div {
+        margin-bottom: 1.5em;
+      }
     }
   }
 }
