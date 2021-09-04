@@ -38,11 +38,21 @@ a {
     top: -3em;
   }
   nav .searchWall.active .cards {
-    display: block;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: absolute;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-transform: translateY(15em) translateX(9.5em);
+            transform: translateY(15em) translateX(9.5em);
   }
   nav .searchWall.active .cards :nth-child(2),
-  nav .searchWall.active .cards :nth-child(3) {
-    width: 12em;
+  nav .searchWall.active .cards :nth-child(3),
+  nav .searchWall.active .cards :nth-child(4) {
+    width: clamp(12em, 15vw, 15em);
   }
   nav .bottomPart ul {
     width: 5em;
@@ -52,8 +62,12 @@ a {
             transform: none;
   }
   nav .bottomPart .secondUl li {
-    -webkit-transform: none;
-            transform: none;
+    -webkit-transform: translateX(-1em);
+            transform: translateX(-1em);
+  }
+  nav .bottomPart .secondUl :nth-child(3) {
+    -webkit-transform: translateX(-0.5em);
+            transform: translateX(-0.5em);
   }
 }
 
@@ -102,7 +116,7 @@ a {
   #nav.active .flexContainer button {
     display: inline-block;
     position: relative;
-    z-index: 1;
+    z-index: 0;
     background-color: rgba(255, 255, 255, 0);
     color: #434242;
     font-size: 1.1em;
@@ -119,6 +133,7 @@ a {
   #nav.active .flexContainer #searchIcon {
     text-align: center;
     margin-left: 7em;
+    z-index: 0;
   }
   #nav.active .flexContainer .flex2 {
     width: 9.5em;
@@ -171,6 +186,33 @@ a {
   }
   .searchWall.active .cards div {
     margin-bottom: 1.5em;
+  }
+  .bottomPart ul {
+    width: 5em;
+    background-color: #ffffff;
+    -webkit-transform: translate(30px, -30px) scale(0.8) !important;
+            transform: translate(30px, -30px) scale(0.8) !important;
+    position: relative !important;
+    margin-top: -45px !important;
+    margin-bottom: -85px !important;
+  }
+  .bottomPart ul li {
+    -webkit-transform: translateX(0.75em);
+            transform: translateX(0.75em);
+  }
+  .bottomPart .secondUl {
+    margin-top: -1em !important;
+  }
+  .bottomPart .secondUl li {
+    -webkit-transform: translateX(-1em);
+            transform: translateX(-1em);
+  }
+  .bottomPart .secondUl li img {
+    width: 8em;
+  }
+  .bottomPart .secondUl :nth-child(3) {
+    -webkit-transform: none;
+            transform: none;
   }
 }
 /*# sourceMappingURL=MediaQNav.css.map */

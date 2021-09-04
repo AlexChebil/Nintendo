@@ -63,6 +63,8 @@ nav .searchWall .searchWall-flexContainer ul li:hover {
 #backspaceIcon.active {
   display: inline-block;
   color: #434242;
+  position: relative;
+  z-index: 2;
 }
 
 .searchWall {

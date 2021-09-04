@@ -6,7 +6,7 @@
 //BurgerMenu
 .burgerMenu {
   position: absolute;
-  z-index: 1;
+  z-index: 2;
   right: 0.5em;
   top: 0.25em;
   .burger {
@@ -25,21 +25,25 @@ nav {
     width: 25em;
     border-bottom: 1px solid black;
     position: relative;
+    z-index: 2;
   }
   #searchIcon {
     position: relative;
+    z-index: 2;
   }
   #backspaceIcon {
     display: none;
+    z-index: 2;
   }
 
   //the wall that appears when clicking the search bar
   .searchWall {
     width: 100vw;
     height: min-content;
-    background-color: rgba(255, 0, 0, 0.219);
+    background-color: $N-White;
     color: $N-Grey;
     position: absolute;
+    z-index: 1;
 
     .searchWall-flexContainer {
       display: flex;
@@ -119,6 +123,7 @@ nav {
     img {
       //nintendo img
       position: relative;
+      z-index: 1;
     }
   }
 

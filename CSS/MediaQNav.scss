@@ -8,14 +8,21 @@
       left: -42em;
       position: absolute;
       top: -3em;
+
       .cards {
-        display: block;
+        display: flex;
+        position: absolute;
+        flex-direction: column;
+        transform: translateY(15em) translateX(9.5em);
+
         :nth-child(2),
-        :nth-child(3) {
-          width: 12em;
+        :nth-child(3),
+        :nth-child(4) {
+          width: clamp(12em, 15vw, 15em);
         }
       }
     }
+
     .bottomPart {
       ul {
         width: 5em;
@@ -25,7 +32,10 @@
       }
       .secondUl {
         li {
-          transform: none;
+          transform: translateX(-1em);
+        }
+        :nth-child(3) {
+          transform: translateX(-0.5em);
         }
       }
     }
@@ -37,6 +47,7 @@
     display: block;
     background-color: $N-LightGrey;
     height: 3em;
+
     img {
       height: 3em;
     }
@@ -79,7 +90,7 @@
       button {
         display: inline-block;
         position: relative;
-        z-index: 1;
+        z-index: 0;
         background-color: rgba(255, 255, 255, 0);
         color: $N-Grey;
         font-size: 1.1em;
@@ -97,6 +108,7 @@
       #searchIcon {
         text-align: center;
         margin-left: 7em;
+        z-index: 0;
       }
 
       .flex2 {
@@ -152,6 +164,34 @@
 
       div {
         margin-bottom: 1.5em;
+      }
+    }
+  }
+  .bottomPart {
+    ul {
+      // !important is used to override all styles (in this case inline styles of bootstrap)
+      width: 5em;
+      background-color: $N-White;
+      transform: translate(30px, -30px) scale(0.8) !important;
+      position: relative !important;
+      margin-top: -45px !important;
+      margin-bottom: -85px !important;
+
+      li {
+        transform: translateX(0.75em);
+      }
+    }
+    .secondUl {
+      margin-top: -1em !important;
+      li {
+        transform: translateX(-1em);
+        img {
+          width: 8em;
+        }
+      }
+      //Amiibo
+      :nth-child(3) {
+        transform: none;
       }
     }
   }
