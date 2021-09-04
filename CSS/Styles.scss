@@ -44,9 +44,8 @@ nav {
     .searchWall-flexContainer {
       display: flex;
       justify-content: space-evenly;
-      flex-wrap: wrap;
       padding-top: 5em;
-      transform: translateX(-9em);
+
       // "Suggestions"/"Nintendo Switch" list
       ul {
         list-style: none;
@@ -58,9 +57,9 @@ nav {
       }
     }
     // three colorful cards on the right
+
     .cards {
       //smooth transition for all of them
-
       :nth-child(1n) {
         transition: all 0.3s ease-in-out;
         border-radius: 0.3em;
@@ -183,11 +182,13 @@ nav {
   ul {
     width: 100vw;
     background-color: rgba(245, 245, 245, 0.329);
+
     i {
       padding: 0.1em 0.4em;
       font-size: 3em;
       margin: 0.3em 0em;
     }
+
     li {
       display: inline-block;
       transform: translateX(20em);

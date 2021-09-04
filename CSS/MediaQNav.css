@@ -29,6 +29,34 @@ a {
   color: #434242;
 }
 
+@media all and (min-width: 320px) and (max-width: 480px) {
+  nav .searchWall.active {
+    width: 80em;
+    height: 100vh;
+    left: -42em;
+    position: absolute;
+    top: -3em;
+  }
+  nav .searchWall.active .cards {
+    display: block;
+  }
+  nav .searchWall.active .cards :nth-child(2),
+  nav .searchWall.active .cards :nth-child(3) {
+    width: 12em;
+  }
+  nav .bottomPart ul {
+    width: 5em;
+  }
+  nav .bottomPart ul li {
+    -webkit-transform: none;
+            transform: none;
+  }
+  nav .bottomPart .secondUl li {
+    -webkit-transform: none;
+            transform: none;
+  }
+}
+
 @media all and (max-width: 940px) {
   .burgerOn {
     display: block;
@@ -43,10 +71,10 @@ a {
     right: 4.5em;
     top: 0.75em;
   }
-  .nav {
+  #nav {
     display: none;
   }
-  .nav.active {
+  #nav.active {
     display: block;
     background-color: #ffffff;
     position: absolute;
@@ -54,10 +82,13 @@ a {
     height: 100vh;
     right: 0;
   }
-  .nav.active img {
+  #nav.active img {
     display: none;
   }
-  .nav.active .flexContainer {
+  #nav.active .bottomPart img {
+    display: block;
+  }
+  #nav.active .flexContainer {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -65,10 +96,10 @@ a {
     margin-top: 1em;
     margin-bottom: 0.5em;
   }
-  .nav.active .flexContainer input {
+  #nav.active .flexContainer input {
     display: none;
   }
-  .nav.active .flexContainer button {
+  #nav.active .flexContainer button {
     display: inline-block;
     position: relative;
     z-index: 1;
@@ -80,26 +111,26 @@ a {
     text-align: center;
     margin-left: 0.25em;
   }
-  .nav.active .flexContainer button:hover {
+  #nav.active .flexContainer button:hover {
     -webkit-transform: scale(1);
             transform: scale(1);
     color: #e60012;
   }
-  .nav.active .flexContainer #searchIcon {
+  #nav.active .flexContainer #searchIcon {
     text-align: center;
     margin-left: 7em;
   }
-  .nav.active .flexContainer .flex2 {
+  #nav.active .flexContainer .flex2 {
     width: 9.5em;
     line-height: 2.5em;
     text-align: center;
     -webkit-transform: translateX(5em);
             transform: translateX(5em);
   }
-  .nav.active .flexContainer .flex2 :nth-child(3) {
+  #nav.active .flexContainer .flex2 :nth-child(3) {
     display: none;
   }
-  .nav.active .bottomPart {
+  #nav.active .bottomPart {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -108,11 +139,15 @@ a {
     text-align: center;
   }
   .searchWall.active {
-    width: 100vw;
+    width: 80em;
     height: 100vh;
-    left: -36em;
+    left: -50em;
     position: absolute;
     top: -3em;
+  }
+  .searchWall.active .searchWall-flexContainer {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
   }
   .searchWall.active #searchWall-flex1 {
     text-align: center;

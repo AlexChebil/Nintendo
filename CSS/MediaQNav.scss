@@ -1,5 +1,37 @@
 @import "GlobalStyles";
 
+@media all and(min-width:320px) and (max-width: 480px) {
+  nav {
+    .searchWall.active {
+      width: 80em;
+      height: 100vh;
+      left: -42em;
+      position: absolute;
+      top: -3em;
+      .cards {
+        display: block;
+        :nth-child(2),
+        :nth-child(3) {
+          width: 12em;
+        }
+      }
+    }
+    .bottomPart {
+      ul {
+        width: 5em;
+        li {
+          transform: none;
+        }
+      }
+      .secondUl {
+        li {
+          transform: none;
+        }
+      }
+    }
+  }
+}
+
 @media all and (max-width: 940px) {
   .burgerOn {
     display: block;
@@ -14,11 +46,11 @@
       top: 0.75em;
     }
   }
-  .nav {
+  #nav {
     display: none;
   }
 
-  .nav.active {
+  #nav.active {
     display: block;
     background-color: $N-White;
     position: absolute;
@@ -28,6 +60,11 @@
 
     img {
       display: none;
+    }
+    .bottomPart {
+      img {
+        display: block;
+      }
     }
 
     .flexContainer {
@@ -82,14 +119,20 @@
     }
   }
   .searchWall.active {
-    width: 100vw;
+    width: 80em;
     height: 100vh;
-    left: -36em;
+    left: -50em;
     position: absolute;
     top: -3em;
+
+    .searchWall-flexContainer {
+      flex-wrap: wrap;
+    }
+
     #searchWall-flex1 {
       text-align: center;
       transform: translateX(8em);
+
       h5 {
         margin-left: 1.5em;
       }
@@ -97,6 +140,7 @@
     .cards {
       text-align: center;
       transform: translateX(8.5em);
+
       :nth-child(2),
       :nth-child(3) {
         width: 25em;

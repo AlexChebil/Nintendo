@@ -4,7 +4,7 @@ const searchIcon = document.querySelector('#searchIcon');
 const backspaceIcon = document.querySelector('#backspaceIcon');
 const searchButtonMediaQ = document.querySelector('.searchButtonMediaQ');
 const burgerMenu = document.querySelector('.burgerMenu');
-const nav = document.querySelector('nav');
+const nav = document.querySelector('#nav');
 
 const main = document.querySelector('main');
 
@@ -21,6 +21,8 @@ main.addEventListener('click', () => {
      searchWall.classList.remove("active");
      searchIcon.classList.remove('active');
      backspaceIcon.classList.remove("active");
+     nav.classList.remove("active");
+
 });
 
 
