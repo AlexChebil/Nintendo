@@ -38,14 +38,21 @@ a {
   z-index: 2;
   right: 0.5em;
   top: 0.25em;
+  display: none;
 }
 
 .burgerMenu .burger {
   width: 2.5em;
   height: 0.5em;
-  background-color: blue;
+  background-color: #434242;
   margin-top: 0.25em;
   right: 0px;
+}
+
+nav {
+  -webkit-transition: all 0.5s cubic-bezier(0.21, -0.16, 0.27, 1.55);
+  transition: all 0.5s cubic-bezier(0.21, -0.16, 0.27, 1.55);
+  position: relative;
 }
 
 nav #search {
@@ -232,8 +239,8 @@ nav .flexContainer a i {
 }
 
 .bottomPart ul {
-  width: 100vw;
   background-color: rgba(245, 245, 245, 0.329);
+  width: 100vw;
 }
 
 .bottomPart ul i {
@@ -263,7 +270,84 @@ nav .flexContainer a i {
 
 main {
   width: 100vw;
-  height: 100vh;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
   background-color: #d6f0fa;
+}
+
+.mainPics {
+  padding-top: 5em;
+}
+
+.mainPics .stardewValley {
+  width: 65vw;
+  margin-left: 18vw;
+}
+
+.mainPics .pegi {
+  position: absolute;
+  width: 4.5em;
+  top: 45em;
+  right: 12.5em;
+}
+
+.textContainer {
+  padding: 2.5em 0em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  background-color: #ffffff;
+}
+
+.textContainer button {
+  width: 15em;
+  text-align: start;
+  margin-bottom: 0.75em;
+}
+
+.textContainer button i {
+  font-size: 1.5em;
+  margin-left: 3.5em;
+  -webkit-transform: translateY(0.1em);
+          transform: translateY(0.1em);
+}
+
+.textContainer .coins {
+  margin-left: 8.25em;
+}
+
+.textContainer .coins i {
+  color: gold;
+}
+
+.textContainer h1 {
+  display: inline-block;
+  padding-bottom: 0.25em;
+}
+
+.textContainer h5 {
+  color: #e60012;
+}
+
+.textContainer h5 i {
+  margin-right: 0.25em;
+}
+
+.textContainer h5::before {
+  content: "";
+  position: absolute;
+  width: 2%;
+  height: 0.25%;
+  background-color: red;
+  margin-top: 1.25em;
+}
+
+.textContainer h5:hover::before {
+  width: 9.5%;
+  -webkit-transition: width 0.5s ease-in-out;
+  transition: width 0.5s ease-in-out;
 }
 /*# sourceMappingURL=Styles.css.map */

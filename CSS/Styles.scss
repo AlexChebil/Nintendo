@@ -9,15 +9,22 @@
   z-index: 2;
   right: 0.5em;
   top: 0.25em;
+  display: none;
+
   .burger {
     width: 2.5em;
     height: 0.5em;
-    background-color: blue;
+    background-color: $N-Grey;
     margin-top: 0.25em;
     right: 0px;
   }
 }
+
 nav {
+  // nav bar transition when scrolling
+  transition: all 0.5s cubic-bezier(0.21, -0.16, 0.27, 1.55); // cubic bezier for bounce
+  position: relative;
+
   // search bar and it's icon
   #search {
     border: none;
@@ -27,10 +34,12 @@ nav {
     position: relative;
     z-index: 2;
   }
+
   #searchIcon {
     position: relative;
     z-index: 2;
   }
+
   #backspaceIcon {
     display: none;
     z-index: 2;
@@ -96,6 +105,7 @@ nav {
       :nth-child(4):hover {
         box-shadow: 0px 0px 5px 0.5px $N-Red;
       }
+
       h5 {
         padding-bottom: 0.5em;
       }
@@ -132,12 +142,15 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: baseline;
+
     button {
       display: none;
     }
+
     a {
       padding: 0em 0.5em;
       transform: translateY(5em);
+
       i {
         padding: 0em 0.5em;
       }
@@ -149,9 +162,11 @@ nav {
   display: flex;
   justify-content: center;
   border: 1px solid $N-LightGrey;
+
   div {
     margin: 0 3em;
   }
+
   :nth-child(1n + 3) {
     margin-top: 0.25em;
   }
@@ -164,6 +179,7 @@ nav {
       border-radius: 0.5em;
       width: 15em;
     }
+
     :nth-child(2) {
       img {
         padding: 0.5em;
@@ -185,8 +201,8 @@ nav {
     border: none;
   }
   ul {
-    width: 100vw;
     background-color: rgba(245, 245, 245, 0.329);
+    width: 100vw;
 
     i {
       padding: 0.1em 0.4em;
@@ -202,9 +218,11 @@ nav {
       cursor: pointer;
     }
   }
+
   .second-dropdown-item {
     padding: 1.5em;
   }
+
   .secondUl {
     li {
       transform: translateX(30em);
@@ -213,8 +231,73 @@ nav {
   }
 }
 
+// NAV FINISHED MOVING TO MAIN
+
 main {
   width: 100vw;
-  height: 100vh;
+  height: fit-content;
   background-color: $N-LightBlue;
+}
+
+.mainPics {
+  padding-top: 5em;
+  .stardewValley {
+    width: 65vw;
+    margin-left: 18vw;
+  }
+  .pegi {
+    position: absolute;
+    width: 4.5em;
+    top: 45em;
+    right: 12.5em;
+  }
+}
+
+.textContainer {
+  padding: 2.5em 0em;
+  display: flex;
+  justify-content: space-around;
+  background-color: $N-White;
+
+  button {
+    width: 15em;
+    text-align: start;
+    margin-bottom: 0.75em;
+    i {
+      font-size: 1.5em;
+      margin-left: 3.5em;
+      transform: translateY(0.1em); // to be vertically centred with the text
+    }
+  }
+
+  .coins {
+    margin-left: 8.25em;
+    i {
+      color: gold;
+    }
+  }
+
+  h1 {
+    // $14.99
+    display: inline-block;
+    padding-bottom: 0.25em;
+  }
+  h5 {
+    color: $N-Red;
+    i {
+      margin-right: 0.25em;
+    }
+  }
+  h5::before {
+    content: "";
+    position: absolute;
+    width: 2%;
+    height: 0.25%;
+    background-color: red;
+    margin-top: 1.25em;
+  }
+  h5:hover::before {
+    width: 9.5%;
+    transition: width 0.5s ease-in-out;
+  }
 }

@@ -13,10 +13,17 @@ button:hover {
 a:hover {
   color: $N-Red;
 }
+
 //burgerMenu
 .burgerMenu:active {
   .burger {
-    background-color: purple;
+    background-color: $N-Red;
+  }
+}
+.burgerMenu:hover {
+  .burger {
+    background-color: $N-Red;
+    transition: all 0.25s ease-in-out;
   }
 }
 
@@ -51,6 +58,7 @@ nav .searchWall .searchWall-flexContainer ul li:hover {
 li:hover {
   color: red;
 }
+
 .dropdown-menu {
   .second-dropdown-item:hover {
     background-color: rgba(255, 255, 255, 0);

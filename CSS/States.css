@@ -45,7 +45,13 @@ a:hover {
 }
 
 .burgerMenu:active .burger {
-  background-color: purple;
+  background-color: #e60012;
+}
+
+.burgerMenu:hover .burger {
+  background-color: #e60012;
+  -webkit-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
 }
 
 nav .searchWall .searchWall-flexContainer ul li:hover {

@@ -43,6 +43,9 @@
 }
 
 @media all and (max-width: 940px) {
+  .burgerMenu {
+    display: block;
+  }
   .burgerOn {
     display: block;
     background-color: $N-LightGrey;

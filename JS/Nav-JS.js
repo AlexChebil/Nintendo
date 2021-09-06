@@ -44,3 +44,16 @@ burgerMenu.addEventListener('click',()=>{
 
 
 })
+
+// hiding nav bar on scrolling
+//base code by w3schools modified by me to suit my needs
+let prevScrollpos = window.pageYOffset;
+window.onscroll =()=> {
+  let currentScrollPos = window.pageYOffset;
+  if (prevScrollpos > currentScrollPos) {
+    nav.style.top = "0";
+  } else {
+    nav.style.top = "-5em";
+  }
+  prevScrollpos = currentScrollPos;
+} 
