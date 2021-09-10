@@ -116,4 +116,11 @@ li:hover {
   -webkit-box-shadow: none;
           box-shadow: none;
 }
+
+.gridContainer img:hover {
+  -webkit-filter: sepia(0.25) brightness(0.6);
+          filter: sepia(0.25) brightness(0.6);
+  -webkit-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
+}
 /*# sourceMappingURL=States.css.map */

@@ -281,6 +281,7 @@ main {
     // $14.99
     display: inline-block;
     padding-bottom: 0.25em;
+    margin-right: 0.5em;
   }
   h5 {
     color: $N-Red;
@@ -295,9 +296,48 @@ main {
     height: 0.25%;
     background-color: red;
     margin-top: 1.25em;
+    transition: width 0.5s ease-in-out;
   }
   h5:hover::before {
     width: 9.5%;
-    transition: width 0.5s ease-in-out;
+    transition: width 0.75s ease-in-out;
+  }
+}
+
+.gridContainer {
+  padding: 2vw 20vw;
+  i {
+    //global
+    position: absolute;
+    transform: translateX(-6.5vw) translateY(4vw);
+    font-size: 2.5em;
+  }
+
+  .cont {
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: all 0.5s ease-in-out; // for a smooth hover (brightness)
+    }
+
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 0.5em;
+
+    .big {
+      grid-column: span 3 / auto;
+      grid-row-start: 1;
+      grid-row-end: 3;
+      i {
+        // the big image icon
+        transform: translateX(-18.5vw) translateY(10vw);
+      }
+    }
+
+    .smalltop {
+      grid-row: span 1 / auto;
+    }
   }
 }

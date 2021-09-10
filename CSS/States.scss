@@ -89,3 +89,10 @@ li:hover {
 .btn-secondary:active:focus {
   box-shadow: none;
 }
+
+.gridContainer {
+  img:hover {
+    filter: sepia(0.25) brightness(0.6);
+    transition: all 0.25s ease-in-out;
+  }
+}
