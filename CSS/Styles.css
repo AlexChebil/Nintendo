@@ -355,7 +355,7 @@ main {
 }
 
 .gridContainer {
-  padding: 2vw 20vw;
+  padding: 2vw 12vw;
 }
 
 .gridContainer i {
@@ -363,16 +363,37 @@ main {
   -webkit-transform: translateX(-6.5vw) translateY(4vw);
           transform: translateX(-6.5vw) translateY(4vw);
   font-size: 2.5em;
+  display: none;
+}
+
+.gridContainer .buttonCont {
+  -webkit-transform: translateX(33vw);
+          transform: translateX(33vw);
+}
+
+.gridContainer .buttonCont i {
+  display: block;
+  position: relative;
+  -webkit-transform: none;
+          transform: none;
+}
+
+.gridContainer .buttonCont button {
+  margin: 0 1em;
+  padding: 0.5em;
 }
 
 .gridContainer .cont {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr)[5];
-      grid-template-columns: repeat(5, 1fr);
-  -ms-grid-rows: (1fr)[2];
-      grid-template-rows: repeat(2, 1fr);
+  -ms-grid-columns: (1fr)[10];
+      grid-template-columns: repeat(10, 1fr);
+  -ms-grid-rows: (1fr)[3];
+      grid-template-rows: repeat(3, 1fr);
   gap: 0.5em;
+  -webkit-transform: translateX(14vw);
+          transform: translateX(14vw);
+  margin-bottom: -8em;
 }
 
 .gridContainer .cont img {
@@ -385,7 +406,7 @@ main {
 }
 
 .gridContainer .cont .big {
-  grid-column: span 3 / auto;
+  grid-column: span 4 / auto;
   -ms-grid-row: 1;
       grid-row-start: 1;
   grid-row-end: 3;
@@ -398,5 +419,28 @@ main {
 
 .gridContainer .cont .smalltop {
   grid-row: span 1 / auto;
+}
+
+.gridContainer .cont .apart {
+  -ms-grid-column: 7;
+      grid-column-start: 7;
+  grid-column-end: 11;
+  grid-row: span 2 / auto;
+  opacity: 0;
+}
+
+.gridContainer .cont .square {
+  -ms-grid-row: 2;
+      grid-row-start: 2;
+}
+
+.gridContainer .cont:active a {
+  -webkit-transform: translateX(-38vw);
+          transform: translateX(-38vw);
+  opacity: 0;
+}
+
+.gridContainer .cont:active .apart {
+  opacity: 1;
 }
 /*# sourceMappingURL=Styles.css.map */

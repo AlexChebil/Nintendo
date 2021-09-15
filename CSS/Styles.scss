@@ -305,12 +305,26 @@ main {
 }
 
 .gridContainer {
-  padding: 2vw 20vw;
+  padding: 2vw 12vw;
   i {
     //global
     position: absolute;
     transform: translateX(-6.5vw) translateY(4vw);
     font-size: 2.5em;
+    display: none;
+  }
+  //find a way to change buttons by triangles
+  .buttonCont {
+    i {
+      display: block;
+      position: relative;
+      transform: none;
+    }
+    transform: translateX(33vw);
+    button {
+      margin: 0 1em;
+      padding: 0.5em;
+    }
   }
 
   .cont {
@@ -322,12 +336,14 @@ main {
     }
 
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(3, 1fr);
     gap: 0.5em;
+    transform: translateX(14vw);
+    margin-bottom: -8em;
 
     .big {
-      grid-column: span 3 / auto;
+      grid-column: span 4 / auto;
       grid-row-start: 1;
       grid-row-end: 3;
       i {
@@ -338,6 +354,27 @@ main {
 
     .smalltop {
       grid-row: span 1 / auto;
+    }
+
+    .apart {
+      grid-column-start: 7;
+      grid-column-end: 11;
+      grid-row: span 2 / auto;
+      opacity: 0;
+    }
+
+    .square {
+      grid-row-start: 2;
+    }
+  }
+
+  .cont:active {
+    a {
+      transform: translateX(-38vw);
+      opacity: 0;
+    }
+    .apart {
+      opacity: 1;
     }
   }
 }
