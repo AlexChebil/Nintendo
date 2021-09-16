@@ -123,4 +123,18 @@ li:hover {
   -webkit-transition: all 0.25s ease-in-out;
   transition: all 0.25s ease-in-out;
 }
+
+.cont.active a {
+  -webkit-transform: translateX(-38vw);
+          transform: translateX(-38vw);
+  opacity: 0;
+  -webkit-transition: all 0.75s cubic-bezier(0.68, -0.6, 0.32, 1.6);
+  transition: all 0.75s cubic-bezier(0.68, -0.6, 0.32, 1.6);
+}
+
+.cont.active .apart {
+  opacity: 1;
+  -webkit-transition: all 0.75s cubic-bezier(0.68, -0.6, 0.32, 1.6);
+  transition: all 0.75s cubic-bezier(0.68, -0.6, 0.32, 1.6);
+}
 /*# sourceMappingURL=States.css.map */

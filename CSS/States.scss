@@ -96,3 +96,15 @@ li:hover {
     transition: all 0.25s ease-in-out;
   }
 }
+
+.cont.active {
+  a {
+    transform: translateX(-38vw);
+    opacity: 0;
+    transition: all 0.75s cubic-bezier(0.68, -0.6, 0.32, 1.6);
+  }
+  .apart {
+    opacity: 1;
+    transition: all 0.75s cubic-bezier(0.68, -0.6, 0.32, 1.6);
+  }
+}

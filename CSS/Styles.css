@@ -355,7 +355,7 @@ main {
 }
 
 .gridContainer {
-  padding: 2vw 12vw;
+  padding: 2vw 8vw;
 }
 
 .gridContainer i {
@@ -427,6 +427,13 @@ main {
   grid-column-end: 11;
   grid-row: span 2 / auto;
   opacity: 0;
+  -webkit-transition: all 1s cubic-bezier(0.68, -0.6, 0.32, 1.6);
+  transition: all 1s cubic-bezier(0.68, -0.6, 0.32, 1.6);
+}
+
+.gridContainer .cont a {
+  -webkit-transition: all 1s cubic-bezier(0.68, -0.6, 0.32, 1.6);
+  transition: all 1s cubic-bezier(0.68, -0.6, 0.32, 1.6);
 }
 
 .gridContainer .cont .square {
@@ -434,13 +441,25 @@ main {
       grid-row-start: 2;
 }
 
-.gridContainer .cont:active a {
-  -webkit-transform: translateX(-38vw);
-          transform: translateX(-38vw);
-  opacity: 0;
+.maintext {
+  background-color: #ffffff;
+  padding: 2vw 20vw;
 }
 
-.gridContainer .cont:active .apart {
-  opacity: 1;
+.maintext p,
+.maintext h2 {
+  padding: 0.5vw 0vw;
+}
+
+.maintext h2 {
+  color: #434242;
+}
+
+.maintext :last-child {
+  font-size: 1.2em;
+}
+
+.maintext :last-child i {
+  padding-left: 2.5vw;
 }
 /*# sourceMappingURL=Styles.css.map */

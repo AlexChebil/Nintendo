@@ -305,7 +305,7 @@ main {
 }
 
 .gridContainer {
-  padding: 2vw 12vw;
+  padding: 2vw 8vw;
   i {
     //global
     position: absolute;
@@ -361,20 +361,32 @@ main {
       grid-column-end: 11;
       grid-row: span 2 / auto;
       opacity: 0;
+      transition: all 1s cubic-bezier(0.68, -0.6, 0.32, 1.6);
+    }
+    a {
+      transition: all 1s cubic-bezier(0.68, -0.6, 0.32, 1.6);
     }
 
     .square {
       grid-row-start: 2;
     }
   }
+}
 
-  .cont:active {
-    a {
-      transform: translateX(-38vw);
-      opacity: 0;
-    }
-    .apart {
-      opacity: 1;
+.maintext {
+  background-color: $N-White;
+  padding: 2vw 20vw;
+  p,
+  h2 {
+    padding: 0.5vw 0vw;
+  }
+  h2 {
+    color: $N-Grey;
+  }
+  :last-child {
+    font-size: 1.2em;
+    i {
+      padding-left: 2.5vw;
     }
   }
 }
