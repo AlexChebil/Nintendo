@@ -108,3 +108,18 @@ li:hover {
     transition: all 0.75s cubic-bezier(0.68, -0.6, 0.32, 1.6);
   }
 }
+// for the icons that appear on hover
+.cont {
+  a:hover {
+    i {
+      display: block;
+      transform: translateX(3vw) translateY(-5vw);
+    }
+  }
+}
+.gridContainer .cont .big i {
+  transform: translateX(15.5vw) translateY(-9.5vw);
+}
+.gridContainer .cont .apart i {
+  transform: translateX(16vw) translateY(-9vw);
+}

@@ -360,27 +360,41 @@ main {
 
 .gridContainer i {
   position: absolute;
-  -webkit-transform: translateX(-6.5vw) translateY(4vw);
-          transform: translateX(-6.5vw) translateY(4vw);
-  font-size: 2.5em;
+  -webkit-transform: translateX(-5vw) translateY(4vw);
+          transform: translateX(-5vw) translateY(4vw);
+  font-size: 2em;
+  color: #ffffff;
   display: none;
 }
 
 .gridContainer .buttonCont {
-  -webkit-transform: translateX(33vw);
-          transform: translateX(33vw);
-}
-
-.gridContainer .buttonCont i {
-  display: block;
-  position: relative;
-  -webkit-transform: none;
-          transform: none;
+  -webkit-transform: translateX(37vw);
+          transform: translateX(37vw);
 }
 
 .gridContainer .buttonCont button {
-  margin: 0 1em;
+  margin: 0 2em;
   padding: 0.5em;
+  -webkit-clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+          clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+  -webkit-transform: rotate(-90deg) scale(3);
+          transform: rotate(-90deg) scale(3);
+  border-radius: 25%;
+}
+
+.gridContainer .buttonCont :last-child {
+  -webkit-transform: rotate(90deg) scale(3);
+          transform: rotate(90deg) scale(3);
+}
+
+.gridContainer .buttonCont #button1:hover {
+  -webkit-transform: rotate(-90deg) scale(4.5);
+          transform: rotate(-90deg) scale(4.5);
+}
+
+.gridContainer .buttonCont #button2:hover {
+  -webkit-transform: rotate(90deg) scale(4.5);
+          transform: rotate(90deg) scale(4.5);
 }
 
 .gridContainer .cont {
@@ -413,8 +427,8 @@ main {
 }
 
 .gridContainer .cont .big i {
-  -webkit-transform: translateX(-18.5vw) translateY(10vw);
-          transform: translateX(-18.5vw) translateY(10vw);
+  -webkit-transform: translateX(-17.5vw) translateY(9.5vw);
+          transform: translateX(-17.5vw) translateY(9.5vw);
 }
 
 .gridContainer .cont .smalltop {
@@ -429,6 +443,11 @@ main {
   opacity: 0;
   -webkit-transition: all 1s cubic-bezier(0.68, -0.6, 0.32, 1.6);
   transition: all 1s cubic-bezier(0.68, -0.6, 0.32, 1.6);
+}
+
+.gridContainer .cont .apart i {
+  -webkit-transform: translateX(-17.5vw) translateY(9.5vw);
+          transform: translateX(-17.5vw) translateY(9.5vw);
 }
 
 .gridContainer .cont a {

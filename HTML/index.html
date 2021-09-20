@@ -14,6 +14,9 @@
      <link rel="stylesheet" href="/Nintendo/CSS/Styles.css">
      <link rel="stylesheet" href="/Nintendo/CSS/States.css">
      <link rel="stylesheet" href="/Nintendo/CSS/MediaQNav.css">
+     <!--Lightbox Module CSS-->
+     <link href="/node_modules/lightbox2/dist/css/lightbox.min.css" rel="stylesheet" />
+
      <title>Stardew Valley For Nintendo Switch</title>
 
 </head>
@@ -28,7 +31,6 @@
           <div class="burger"></div>
           <div class="burger"></div>
      </div>
-     <!-- FIX THE ISSUE WITH THE "nav" CLASS FOR THE DESKTOP VERSION -->
      <nav id="nav">
           <div class="upperPart">
 
@@ -138,22 +140,23 @@
                <div class="gridContainer">
                     
                     <div class="cont">
+                         <!-- need image path on "a" href for the Lightbox Module in order to work properly -->
 
-                         <a class="big" href=""><img class="big"src="/Nintendo/Ressources/Stardew Valley/2.png" alt=""><i class="fas fa-plus-circle "></i></a>
+                         <a class="big" data-lightbox="stardewValley" href="/Nintendo/Ressources/Stardew Valley/2.png"><img class="big"src="/Nintendo/Ressources/Stardew Valley/2.png" alt=""><i class="fas fa-plus-circle "></i></a>
                          
-                         <a class="smalltop" href=""><img class="smalltop"src="/Nintendo/Ressources/Stardew Valley/3.png" alt=""><i class="fas fa-plus-circle "></i></a>
-                         <a class="smalltop" href=""><img class="smalltop"src="/Nintendo/Ressources/Stardew Valley/4.png" alt=""><i class="fas fa-plus-circle "></i></a>
+                         <a class="smalltop" data-lightbox="stardewValley" href="/Nintendo/Ressources/Stardew Valley/3.png"><img class="smalltop"src="/Nintendo/Ressources/Stardew Valley/3.png" alt=""><i class="fas fa-plus-circle "></i></a>
+                         <a class="smalltop" data-lightbox="stardewValley" href="/Nintendo/Ressources/Stardew Valley/4.png"><img class="smalltop"src="/Nintendo/Ressources/Stardew Valley/4.png" alt=""><i class="fas fa-plus-circle "></i></a>
 
-                         <a class="square" href=""><img class="square"src="/Nintendo/Ressources/Stardew Valley/5.png" alt=""><i class="fas fa-plus-circle "></i></a>
-                         <a class="square" href=""><img class="square"src="/Nintendo/Ressources/Stardew Valley/6.png" alt=""><i class="fas fa-plus-circle "></i></a>
+                         <a class="square" data-lightbox="stardewValley" href="/Nintendo/Ressources/Stardew Valley/5.png"><img class="square"src="/Nintendo/Ressources/Stardew Valley/5.png" alt=""><i class="fas fa-plus-circle "></i></a>
+                         <a class="square" data-lightbox="stardewValley" href="/Nintendo/Ressources/Stardew Valley/6.png"><img class="square"src="/Nintendo/Ressources/Stardew Valley/6.png" alt=""><i class="fas fa-plus-circle "></i></a>
 
-                         <a class="apart" href=""><img class="apart"src="/Nintendo/Ressources/Stardew Valley/7.png" alt=""><i class="fas fa-plus-circle "></i></a>
+                         <a class="apart" data-lightbox="stardewValley" href="/Nintendo/Ressources/Stardew Valley/7.png"><img class="apart"src="/Nintendo/Ressources/Stardew Valley/7.png" alt=""><i class="fas fa-plus-circle "></i></a>
 
                     </div>
 
                     <div class="buttonCont">
-                         <button id="button1"><i class="far far fa-arrow-alt-circle-left"></i></button>
-                         <button id="button2"><i class="far far fa-arrow-alt-circle-right"></i></button>
+                         <button id="button1"></i></button>
+                         <button id="button2"></button>
                     </div>
 
                </div>   
@@ -200,5 +203,7 @@
      <!-- My Script -->
      <script src="/Nintendo/JS/Nav-JS.js"></script>
      <script src="/Nintendo/JS/Main-JS.js"></script>
+     <script src="/node_modules/lightbox2/dist/js/lightbox-plus-jquery.min.js"></script>
+
 </body>
 </html>

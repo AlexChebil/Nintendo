@@ -137,4 +137,20 @@ li:hover {
   -webkit-transition: all 0.75s cubic-bezier(0.68, -0.6, 0.32, 1.6);
   transition: all 0.75s cubic-bezier(0.68, -0.6, 0.32, 1.6);
 }
+
+.cont a:hover i {
+  display: block;
+  -webkit-transform: translateX(3vw) translateY(-5vw);
+          transform: translateX(3vw) translateY(-5vw);
+}
+
+.gridContainer .cont .big i {
+  -webkit-transform: translateX(15.5vw) translateY(-9.5vw);
+          transform: translateX(15.5vw) translateY(-9.5vw);
+}
+
+.gridContainer .cont .apart i {
+  -webkit-transform: translateX(16vw) translateY(-9vw);
+          transform: translateX(16vw) translateY(-9vw);
+}
 /*# sourceMappingURL=States.css.map */
