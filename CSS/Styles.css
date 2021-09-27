@@ -8,6 +8,7 @@
 
 body {
   background-color: #ffffff;
+  overflow-x: hidden;
 }
 
 button {
@@ -480,5 +481,85 @@ main {
 
 .maintext :last-child i {
   padding-left: 2.5vw;
+}
+
+.tableCont {
+  background-color: #ffffff;
+}
+
+table {
+  padding-top: 2.5vw;
+  margin-bottom: 15em;
+  margin-left: 13vw;
+  white-space: break-spaces;
+  width: 75vw;
+  border-spacing: 1em 0em;
+  border-collapse: separate;
+}
+
+table tr:nth-child(5) {
+  -webkit-transform: translateY(1vw);
+          transform: translateY(1vw);
+}
+
+table tr:nth-child(5) span {
+  font-size: 1.2em;
+  margin-left: -5em;
+  top: -1vw;
+  position: relative;
+}
+
+table th {
+  padding: 1vw 0;
+  padding-right: 15vw;
+  width: 15em;
+}
+
+table th #pegi {
+  position: relative;
+  right: 5vw;
+  width: 5em;
+}
+
+table th #pegiRating {
+  top: -1.75vw;
+}
+
+table th #pegi-Rating-P {
+  -webkit-transform: translateX(1.5vw);
+          transform: translateX(1.5vw);
+  width: 135%;
+}
+
+table th .flexcont {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 5em;
+}
+
+table th .flexcont img {
+  padding: 0 4vw;
+}
+
+table th .Supported-Play-Modes-P {
+  -webkit-transform: translateX(3vw);
+          transform: translateX(3vw);
+  width: 135%;
+}
+
+table .grayBG {
+  background-color: #efefef;
+}
+
+table span {
+  color: red;
+  font-size: 1.1em;
+  padding-right: 0.25vw;
+}
+
+table i {
+  font-size: 1.5em;
+  padding: 0 0.5vw;
 }
 /*# sourceMappingURL=Styles.css.map */

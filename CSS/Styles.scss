@@ -1,4 +1,5 @@
 @import "GlobalStyles";
+
 // COMMENT THIS BEFORE ANYTHING ELSE
 .burgerOn {
   display: none;
@@ -406,5 +407,79 @@ main {
     i {
       padding-left: 2.5vw;
     }
+  }
+}
+
+.tableCont {
+  background-color: $N-White;
+}
+
+table {
+  padding-top: 2.5vw;
+  margin-bottom: 15em;
+  margin-left: 13vw;
+  white-space: break-spaces;
+  width: 75vw;
+  border-spacing: 1em 0em; //border-spacing works only when border-collapse is separate.
+  border-collapse: separate;
+
+  tr:nth-child(5) {
+    transform: translateY(1vw);
+    span {
+      font-size: 1.2em;
+      margin-left: -5em;
+      top: -1vw;
+      position: relative;
+    }
+  }
+
+  th {
+    padding: 1vw 0;
+    padding-right: 15vw;
+    width: 15em;
+
+    #pegi {
+      position: relative;
+      right: 5vw;
+      width: 5em;
+    }
+
+    #pegiRating {
+      top: -1.75vw;
+    }
+
+    #pegi-Rating-P {
+      transform: translateX(1.5vw);
+      width: 135%;
+    }
+    .flexcont {
+      //imgs for the differant switch states
+      display: flex;
+      width: 5em;
+
+      img {
+        padding: 0 4vw;
+      }
+    }
+
+    .Supported-Play-Modes-P {
+      transform: translateX(3vw);
+      width: 135%;
+    }
+  }
+
+  .grayBG {
+    background-color: $N-LightGrey;
+  }
+
+  span {
+    color: red;
+    font-size: 1.1em;
+    padding-right: 0.25vw;
+  }
+
+  i {
+    font-size: 1.5em;
+    padding: 0 0.5vw;
   }
 }
