@@ -237,25 +237,28 @@ nav {
 main {
   width: 100vw;
   height: fit-content;
-  background-color: $N-LightBlue;
+  //background-color: $N-LightBlue;
 }
 
 .mainPics {
-  padding-top: 5em;
+  background-color: $N-LightBlue;
+
   .stardewValley {
     width: 65vw;
     margin-left: 18vw;
+    transform: translateY(4vw);
   }
+
   .pegi {
     position: absolute;
-    width: 4.5em;
-    top: 45em;
-    right: 12.5em;
+    width: 4vw;
+    top: 36vw;
+    right: 10.5vw;
   }
 }
 
 .textContainer {
-  padding: 2.5em 0em;
+  padding: 6vw 0em;
   display: flex;
   justify-content: space-around;
   background-color: $N-White;
@@ -290,23 +293,11 @@ main {
       margin-right: 0.25em;
     }
   }
-  h5::before {
-    content: "";
-    position: absolute;
-    width: 2%;
-    height: 0.25%;
-    background-color: red;
-    margin-top: 1.25em;
-    transition: width 0.5s ease-in-out;
-  }
-  h5:hover::before {
-    width: 9.5%;
-    transition: width 0.75s ease-in-out;
-  }
 }
 
 .gridContainer {
   padding: 2vw 8vw;
+  background-color: $N-LightBlue;
 
   i {
     //global
@@ -416,7 +407,6 @@ main {
 
 table {
   padding-top: 2.5vw;
-  margin-bottom: 15em;
   margin-left: 13vw;
   white-space: break-spaces;
   width: 75vw;
@@ -430,6 +420,36 @@ table {
       margin-left: -5em;
       top: -1vw;
       position: relative;
+    }
+  }
+
+  tr:nth-child(6) {
+    transform: translateY(2vw);
+    img {
+      width: 15em;
+      display: inline;
+      position: relative;
+    }
+    span {
+      color: inherit;
+      display: inline-block;
+      top: 1em;
+      position: relative;
+      margin: 0 2vw;
+    }
+    a {
+      font-size: 1.25em;
+    }
+  }
+  .flexContLastTr {
+    display: flex;
+    margin-top: 2vw;
+    :nth-child(1n + 1) {
+      margin: 0 1vw;
+    }
+    :nth-child(1) {
+      position: relative;
+      top: 1vw;
     }
   }
 
@@ -481,5 +501,66 @@ table {
   i {
     font-size: 1.5em;
     padding: 0 0.5vw;
+  }
+}
+
+.small-Text-Under-Table {
+  background-color: $N-White;
+  width: 50%;
+  font-size: 0.75em;
+  margin-left: 25vw;
+  margin: 10vw auto;
+}
+
+.lowCaroussel {
+  padding-bottom: 15em;
+
+  .lowCaroussel-flexCont {
+    display: flex;
+    flex-direction: row;
+    margin-top: 5vw;
+    width: 200%;
+    transition: all 1s ease-in-out;
+    .lowCaroussel-flex:nth-child(8) {
+      width: 50.5%; // fix for the little bar under h5 width must be over 50%
+    }
+    .lowCaroussel-flex {
+      margin: 0vw 2vw;
+
+      :nth-child(2) {
+        text-align: center;
+        font-size: 1.2em;
+      }
+      :nth-child(3) {
+        font-size: 1.5em;
+        text-align: center;
+      }
+    }
+    img {
+      width: 100%;
+      border-radius: 1em;
+      display: block;
+      margin-right: auto;
+      margin-left: auto;
+    }
+    h5 {
+      font-size: 0.8em;
+      i {
+        margin-left: 6vw;
+      }
+    }
+    h5:hover::before {
+      width: 5.25vw;
+      transition: width 0.75s ease-in-out;
+    }
+  }
+  .buttonCont {
+    margin-left: 42.5vw;
+    margin-top: 2vw;
+  }
+  button {
+    margin: 0 2em;
+    padding: 1.5em;
+    border-radius: 25%;
   }
 }

@@ -125,6 +125,23 @@ li:hover {
   transition: all 0.25s ease-in-out;
 }
 
+h5::before {
+  content: "";
+  position: absolute;
+  width: 2%;
+  height: 0.25%;
+  background-color: red;
+  margin-top: 1.25em;
+  -webkit-transition: width 0.5s ease-in-out;
+  transition: width 0.5s ease-in-out;
+}
+
+h5:hover::before {
+  width: 9.5%;
+  -webkit-transition: width 0.75s ease-in-out;
+  transition: width 0.75s ease-in-out;
+}
+
 .cont.active a {
   -webkit-transform: translateX(-38vw);
           transform: translateX(-38vw);
@@ -153,5 +170,12 @@ li:hover {
 .gridContainer .cont .apart i {
   -webkit-transform: translateX(16vw) translateY(-9vw);
           transform: translateX(16vw) translateY(-9vw);
+}
+
+.lowCaroussel-flexCont.active {
+  -webkit-transform: translateX(-100vw);
+          transform: translateX(-100vw);
+  -webkit-transition: all 1.25s cubic-bezier(0.68, -0.6, 0.32, 1.6);
+  transition: all 1.25s cubic-bezier(0.68, -0.6, 0.32, 1.6);
 }
 /*# sourceMappingURL=States.css.map */

@@ -97,6 +97,20 @@ li:hover {
   }
 }
 
+h5::before {
+  content: "";
+  position: absolute;
+  width: 2%;
+  height: 0.25%;
+  background-color: red;
+  margin-top: 1.25em;
+  transition: width 0.5s ease-in-out;
+}
+h5:hover::before {
+  width: 9.5%;
+  transition: width 0.75s ease-in-out;
+}
+
 .cont.active {
   a {
     transform: translateX(-38vw);
@@ -122,4 +136,10 @@ li:hover {
 }
 .gridContainer .cont .apart i {
   transform: translateX(16vw) translateY(-9vw);
+}
+
+.lowCaroussel-flexCont.active {
+  // this is the lower caroussel
+  transform: translateX(-100vw);
+  transition: all 1.25s cubic-bezier(0.68, -0.6, 0.32, 1.6);
 }

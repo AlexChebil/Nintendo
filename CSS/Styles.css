@@ -274,27 +274,28 @@ main {
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
-  background-color: #d6f0fa;
 }
 
 .mainPics {
-  padding-top: 5em;
+  background-color: #d6f0fa;
 }
 
 .mainPics .stardewValley {
   width: 65vw;
   margin-left: 18vw;
+  -webkit-transform: translateY(4vw);
+          transform: translateY(4vw);
 }
 
 .mainPics .pegi {
   position: absolute;
-  width: 4.5em;
-  top: 45em;
-  right: 12.5em;
+  width: 4vw;
+  top: 36vw;
+  right: 10.5vw;
 }
 
 .textContainer {
-  padding: 2.5em 0em;
+  padding: 6vw 0em;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -338,25 +339,9 @@ main {
   margin-right: 0.25em;
 }
 
-.textContainer h5::before {
-  content: "";
-  position: absolute;
-  width: 2%;
-  height: 0.25%;
-  background-color: red;
-  margin-top: 1.25em;
-  -webkit-transition: width 0.5s ease-in-out;
-  transition: width 0.5s ease-in-out;
-}
-
-.textContainer h5:hover::before {
-  width: 9.5%;
-  -webkit-transition: width 0.75s ease-in-out;
-  transition: width 0.75s ease-in-out;
-}
-
 .gridContainer {
   padding: 2vw 8vw;
+  background-color: #d6f0fa;
 }
 
 .gridContainer i {
@@ -489,7 +474,6 @@ main {
 
 table {
   padding-top: 2.5vw;
-  margin-bottom: 15em;
   margin-left: 13vw;
   white-space: break-spaces;
   width: 75vw;
@@ -507,6 +491,45 @@ table tr:nth-child(5) span {
   margin-left: -5em;
   top: -1vw;
   position: relative;
+}
+
+table tr:nth-child(6) {
+  -webkit-transform: translateY(2vw);
+          transform: translateY(2vw);
+}
+
+table tr:nth-child(6) img {
+  width: 15em;
+  display: inline;
+  position: relative;
+}
+
+table tr:nth-child(6) span {
+  color: inherit;
+  display: inline-block;
+  top: 1em;
+  position: relative;
+  margin: 0 2vw;
+}
+
+table tr:nth-child(6) a {
+  font-size: 1.25em;
+}
+
+table .flexContLastTr {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 2vw;
+}
+
+table .flexContLastTr :nth-child(1n + 1) {
+  margin: 0 1vw;
+}
+
+table .flexContLastTr :nth-child(1) {
+  position: relative;
+  top: 1vw;
 }
 
 table th {
@@ -561,5 +584,82 @@ table span {
 table i {
   font-size: 1.5em;
   padding: 0 0.5vw;
+}
+
+.small-Text-Under-Table {
+  background-color: #ffffff;
+  width: 50%;
+  font-size: 0.75em;
+  margin-left: 25vw;
+  margin: 10vw auto;
+}
+
+.lowCaroussel {
+  padding-bottom: 15em;
+}
+
+.lowCaroussel .lowCaroussel-flexCont {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin-top: 5vw;
+  width: 200%;
+  -webkit-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
+}
+
+.lowCaroussel .lowCaroussel-flexCont .lowCaroussel-flex:nth-child(8) {
+  width: 50.5%;
+}
+
+.lowCaroussel .lowCaroussel-flexCont .lowCaroussel-flex {
+  margin: 0vw 2vw;
+}
+
+.lowCaroussel .lowCaroussel-flexCont .lowCaroussel-flex :nth-child(2) {
+  text-align: center;
+  font-size: 1.2em;
+}
+
+.lowCaroussel .lowCaroussel-flexCont .lowCaroussel-flex :nth-child(3) {
+  font-size: 1.5em;
+  text-align: center;
+}
+
+.lowCaroussel .lowCaroussel-flexCont img {
+  width: 100%;
+  border-radius: 1em;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.lowCaroussel .lowCaroussel-flexCont h5 {
+  font-size: 0.8em;
+}
+
+.lowCaroussel .lowCaroussel-flexCont h5 i {
+  margin-left: 6vw;
+}
+
+.lowCaroussel .lowCaroussel-flexCont h5:hover::before {
+  width: 5.25vw;
+  -webkit-transition: width 0.75s ease-in-out;
+  transition: width 0.75s ease-in-out;
+}
+
+.lowCaroussel .buttonCont {
+  margin-left: 42.5vw;
+  margin-top: 2vw;
+}
+
+.lowCaroussel button {
+  margin: 0 2em;
+  padding: 1.5em;
+  border-radius: 25%;
 }
 /*# sourceMappingURL=Styles.css.map */
