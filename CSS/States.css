@@ -178,4 +178,12 @@ h5:hover::before {
   -webkit-transition: all 1.25s cubic-bezier(0.68, -0.6, 0.32, 1.6);
   transition: all 1.25s cubic-bezier(0.68, -0.6, 0.32, 1.6);
 }
+
+.lowCaroussel:hover button {
+  opacity: 0.4 !important;
+  -webkit-transform: scale(1) !important;
+          transform: scale(1) !important;
+  -webkit-transition: opacity 0.25s ease-in-out;
+  transition: opacity 0.25s ease-in-out;
+}
 /*# sourceMappingURL=States.css.map */

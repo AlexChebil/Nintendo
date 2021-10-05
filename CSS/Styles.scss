@@ -512,8 +512,31 @@ table {
   margin: 10vw auto;
 }
 
+.lowCaroussel::before {
+  content: "";
+  position: absolute;
+  border-top: 2px solid $N-LightGrey;
+  width: 70%;
+  margin-left: 17.5vw;
+  margin-top: -4.5em;
+}
+.lowCaroussel::after {
+  content: "";
+  position: absolute;
+  border-top: 2px solid $N-LightGrey;
+  width: 70%;
+  margin-left: 17.5vw;
+  margin-top: 4.5vw;
+}
+
 .lowCaroussel {
-  padding-bottom: 15em;
+  margin-bottom: 10vw;
+
+  h3 {
+    margin-left: 20vw;
+    margin-bottom: -2.5vw;
+    color: $N-Grey;
+  }
 
   .lowCaroussel-flexCont {
     display: flex;
@@ -521,9 +544,11 @@ table {
     margin-top: 5vw;
     width: 200%;
     transition: all 1s ease-in-out;
+
     .lowCaroussel-flex:nth-child(8) {
       width: 50.5%; // fix for the little bar under h5 width must be over 50%
     }
+
     .lowCaroussel-flex {
       margin: 0vw 2vw;
 
@@ -554,13 +579,51 @@ table {
       transition: width 0.75s ease-in-out;
     }
   }
-  .buttonCont {
-    margin-left: 42.5vw;
-    margin-top: 2vw;
+
+  #lowCaroussel-button1,
+  #lowCaroussel-button2 {
+    position: absolute;
+    right: -0.5vw;
+    top: 192vw;
+    padding: 5vw 2vw;
+    opacity: 0;
+    background-color: black;
+    transition: opacity 0.5s ease-in-out;
   }
-  button {
-    margin: 0 2em;
-    padding: 1.5em;
-    border-radius: 25%;
+
+  #lowCaroussel-button2 {
+    left: -0.5vw;
+  }
+}
+
+.listSection {
+  background-color: $N-LightGrey;
+  padding: 2vw 0;
+  margin-bottom: 15em;
+  h6 {
+    margin-left: 26.5%;
+  }
+  img {
+    width: 2em;
+  }
+}
+.listContainer {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 25%;
+
+  ul {
+    padding: 0 2vw;
+  }
+
+  li {
+    list-style-type: none;
+    font-size: 0.9em;
+    line-height: 2em;
+  }
+
+  li:nth-child(1) {
+    font-weight: bold;
+    font-size: 1.2em;
   }
 }
