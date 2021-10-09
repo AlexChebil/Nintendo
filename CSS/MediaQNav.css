@@ -99,6 +99,8 @@ a {
     width: 20em;
     height: 100vh;
     right: 0;
+    position: fixed;
+    z-index: 1;
   }
   #nav.active img {
     display: none;

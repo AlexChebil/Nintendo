@@ -695,7 +695,6 @@ table i {
 .listSection {
   background-color: #efefef;
   padding: 2vw 0;
-  margin-bottom: 15em;
 }
 
 .listSection h6 {
@@ -728,5 +727,52 @@ table i {
 .listContainer li:nth-child(1) {
   font-weight: bold;
   font-size: 1.2em;
+}
+
+footer {
+  color: #efefef;
+  background-color: #434242;
+  height: 10vw;
+}
+
+footer a {
+  color: #efefef;
+  display: inline-block;
+  -webkit-transform: translateX(42.5vw);
+          transform: translateX(42.5vw);
+  margin: 0 1vw;
+}
+
+footer p {
+  text-align: center;
+  line-height: 0.5vw;
+  margin: 1vw 0;
+}
+
+footer img {
+  width: 2vw;
+}
+
+footer .imageCont {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: 42.5vw;
+}
+
+footer .imageCont div {
+  margin: 0 0.25vw;
+  -webkit-transform: translateY(2vw);
+          transform: translateY(2vw);
+}
+
+footer .imageCont div:nth-child(5) {
+  margin: 0 1vw;
+  -webkit-transform: none;
+          transform: none;
+}
+
+footer .imageCont div:nth-child(5) img {
+  width: 4vw;
 }
 /*# sourceMappingURL=Styles.css.map */

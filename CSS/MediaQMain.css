@@ -1,0 +1,109 @@
+@media all and (max-width: 475px) {
+  main .mainPics .stardewValley {
+    width: 100%;
+    margin: 0;
+    -webkit-transform: none;
+            transform: none;
+  }
+  main .mainPics .pegi {
+    display: none;
+  }
+  main .textContainer {
+    padding: 2vw;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding-bottom: 15vw;
+  }
+  main .textContainer p:nth-child(1) {
+    white-space: pre;
+  }
+  main .textContainer h1 {
+    display: block;
+    margin-top: -1.5em;
+  }
+  main .textContainer h5 {
+    width: 160%;
+    -webkit-transform: translateY(7.5em);
+            transform: translateY(7.5em);
+  }
+  main .textContainer .coins {
+    margin-left: 0;
+  }
+  main .gridContainer {
+    padding: 4em 0;
+  }
+  main .gridContainer .cont {
+    -webkit-transform: translateX(32.5vw) scale(1.6);
+            transform: translateX(32.5vw) scale(1.6);
+    margin-bottom: 0em;
+  }
+  main .gridContainer .cont i {
+    display: none;
+  }
+  main .gridContainer .buttonCont {
+    -webkit-transform: translateX(31vw);
+            transform: translateX(31vw);
+    margin-bottom: -5vh;
+  }
+  main .cont.active .apart {
+    -webkit-transform: translateX(-25vw);
+            transform: translateX(-25vw);
+  }
+  .maintext :last-child {
+    font-size: 1.2em;
+    white-space: pre;
+    -webkit-transform: translateX(-8vw);
+            transform: translateX(-8vw);
+  }
+  .maintext :last-child i {
+    -webkit-transform: none;
+            transform: none;
+  }
+  table {
+    margin-left: -3vw;
+    border-spacing: 1em;
+  }
+  table th .flexcont {
+    width: 7em;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  table th .flexcont img {
+    margin-bottom: 2.5vw;
+    -webkit-transform: translateX(6vw);
+            transform: translateX(6vw);
+  }
+  table tr:nth-child(5) span {
+    top: -12.5vw;
+  }
+  table th #pegiRating {
+    top: -40vw;
+    margin-left: 0;
+  }
+  table th #pegi {
+    right: -10vw;
+    top: -35vw;
+  }
+  table th #pegi-Rating-P {
+    position: relative;
+    top: -30vw;
+  }
+  .lastTr {
+    background-color: red;
+    padding: 0em 5em;
+  }
+  table tr:nth-child(6) span {
+    margin-bottom: 5vh;
+  }
+  table .flexContLastTr :nth-child(1) {
+    white-space: pre;
+  }
+  table .flexContLastTr {
+    margin-left: -10vw;
+  }
+}
+/*# sourceMappingURL=MediaQMain.css.map */

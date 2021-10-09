@@ -599,7 +599,6 @@ table {
 .listSection {
   background-color: $N-LightGrey;
   padding: 2vw 0;
-  margin-bottom: 15em;
   h6 {
     margin-left: 26.5%;
   }
@@ -625,5 +624,45 @@ table {
   li:nth-child(1) {
     font-weight: bold;
     font-size: 1.2em;
+  }
+}
+
+footer {
+  color: $N-LightGrey;
+  background-color: $N-Grey;
+  height: 10vw;
+
+  a {
+    color: $N-LightGrey;
+    display: inline-block;
+    transform: translateX(42.5vw);
+    margin: 0 1vw;
+  }
+
+  p {
+    text-align: center;
+    line-height: 0.5vw;
+    margin: 1vw 0;
+  }
+
+  img {
+    width: 2vw;
+  }
+
+  .imageCont {
+    display: flex;
+    margin-left: 42.5vw;
+    div {
+      margin: 0 0.25vw;
+      transform: translateY(2vw);
+    }
+
+    div:nth-child(5) {
+      margin: 0 1vw;
+      transform: none;
+      img {
+        width: 4vw;
+      }
+    }
   }
 }
