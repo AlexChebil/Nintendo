@@ -125,17 +125,47 @@
         -ms-flex-pack: start;
             justify-content: flex-start;
   }
-}
-
-.lowCaroussel .lowCaroussel-flexCont .lowCaroussel-flex {
-  -ms-flex-negative: 0;
-      flex-shrink: 0;
-  -ms-flex-preferred-size: 75vw;
-      flex-basis: 75vw;
-  margin-bottom: 6vw;
-}
-
-.lowCaroussel .lowCaroussel-flexCont .lowCaroussel-flex h5::before {
-  display: none;
+  .lowCaroussel .lowCaroussel-flexCont .lowCaroussel-flex {
+    -ms-flex-negative: 0;
+        flex-shrink: 0;
+    -ms-flex-preferred-size: 75vw;
+        flex-basis: 75vw;
+    margin-bottom: 6vw;
+  }
+  .lowCaroussel .lowCaroussel-flexCont .lowCaroussel-flex h5::before {
+    display: none;
+  }
+  .listContainer {
+    margin-left: 0;
+  }
+  .listContainer ul {
+    -ms-flex-preferred-size: 50%;
+        flex-basis: 50%;
+  }
+  footer {
+    height: 100%;
+  }
+  footer a {
+    -webkit-transform: translateX(20vw);
+            transform: translateX(20vw);
+  }
+  footer .imageCont {
+    margin-left: 26vw;
+  }
+  footer .imageCont div {
+    margin: 0 1vw;
+    -webkit-transform: translateY(4vw);
+            transform: translateY(4vw);
+  }
+  footer img {
+    width: 7vw;
+  }
+  footer .imageCont div:nth-child(5) img {
+    width: 12vw;
+  }
+  footer p {
+    line-height: 3vh;
+    margin: 0;
+  }
 }
 /*# sourceMappingURL=MediaQMain.css.map */
