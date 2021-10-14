@@ -1,4 +1,4 @@
-@media all and (max-width: 475px) {
+@media all and (max-width: 700px) {
   main .mainPics .stardewValley {
     width: 100%;
     margin: 0;
@@ -38,6 +38,7 @@
     -webkit-transform: translateX(32.5vw) scale(1.6);
             transform: translateX(32.5vw) scale(1.6);
     margin-bottom: 0em;
+    gap: 0.2em;
   }
   main .gridContainer .cont i {
     display: none;
@@ -62,7 +63,7 @@
             transform: none;
   }
   table {
-    margin-left: -3vw;
+    margin-left: -2vw;
     border-spacing: 1em;
   }
   table th .flexcont {
@@ -162,6 +163,192 @@
   }
   footer .imageCont div:nth-child(5) img {
     width: 12vw;
+  }
+  footer p {
+    line-height: 3vh;
+    margin: 0;
+  }
+}
+
+@media all and (min-width: 476px) and (max-width: 700px) {
+  main .gridContainer .cont {
+    padding-top: 2em;
+  }
+  main .gridContainer .buttonCont {
+    -webkit-transform: translateX(37vw);
+            transform: translateX(37vw);
+    margin-bottom: -4vh;
+  }
+  main .maintext :last-child {
+    -webkit-transform: translateX(0vw);
+            transform: translateX(0vw);
+  }
+  main table {
+    margin-right: 0;
+  }
+  main table th {
+    padding-right: 30vw;
+  }
+  main table th #pegiRating {
+    top: -16vh;
+  }
+  main table th #pegi {
+    top: -18vh;
+  }
+  main table tr:nth-child(5) span {
+    top: -5.5vh;
+    margin-left: 0;
+  }
+  main table tr:nth-child(6) img {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+  }
+  main .small-Text-Under-Table {
+    margin: 10vh auto;
+  }
+  main .lowCaroussel .lowCaroussel-flexCont .lowCaroussel-flex {
+    -ms-flex-preferred-size: 40vw;
+        flex-basis: 40vw;
+  }
+  main .listSection h6 {
+    margin-left: 0;
+    text-align: center;
+  }
+  footer a {
+    -webkit-transform: translateX(29vw);
+            transform: translateX(29vw);
+  }
+  footer img {
+    width: 5vw;
+  }
+  footer .imageCont div:nth-child(5) img {
+    width: 9vw;
+  }
+  footer .imageCont {
+    margin-left: 31vw;
+  }
+}
+
+@media all and (min-width: 768px) and (max-width: 1000px) {
+  main .mainPics .pegi {
+    width: 7vw;
+    top: 32vw;
+    right: 8.5vw;
+  }
+  main .gridContainer {
+    padding: 4vw 0;
+  }
+  main .gridContainer .buttonCont {
+    -webkit-transform: translateX(39vw);
+            transform: translateX(39vw);
+  }
+  main .gridContainer .cont {
+    margin-bottom: -4em;
+    -webkit-transform: translateX(20vw);
+            transform: translateX(20vw);
+  }
+  main table {
+    margin-left: 0.5vw;
+    width: 99vw;
+  }
+  main table th .flexcont {
+    width: 5em;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  main table th .flexcont img {
+    padding: 2vw 0vw;
+    -webkit-transform: translateX(16vw);
+            transform: translateX(16vw);
+  }
+  main table th #pegiRating {
+    top: -20.75vw;
+    margin-left: -6em;
+  }
+  main table th #pegi {
+    right: 10vw;
+    top: -17vw;
+  }
+  main table th #pegi-Rating-P {
+    top: -17vw;
+    position: relative;
+  }
+  main table tr:nth-child(5) span {
+    margin-left: -7em;
+    top: -4vw;
+  }
+  main table tr:nth-child(6) img {
+    -webkit-transform: translateX(15vw);
+            transform: translateX(15vw);
+  }
+  main table tr:nth-child(6) a {
+    display: block;
+    margin-top: 4vw;
+    -webkit-transform: translateX(4vw);
+            transform: translateX(4vw);
+    text-align: center;
+  }
+  main table tr:nth-child(6) span {
+    margin: 2vw 0;
+    -webkit-transform: translateX(14vw);
+            transform: translateX(14vw);
+    text-align: center;
+  }
+  main table .flexContLastTr {
+    -webkit-transform: translateX(7vw);
+            transform: translateX(7vw);
+  }
+  main table .flexContLastTr button {
+    padding: 2vw 6vw;
+  }
+  main .lowCaroussel .lowCaroussel-flexCont {
+    overflow-x: scroll;
+    width: auto;
+  }
+  main .lowCaroussel .lowCaroussel-flexCont .lowCaroussel-flex {
+    -ms-flex-negative: 0;
+        flex-shrink: 0;
+    -ms-flex-preferred-size: 30%;
+        flex-basis: 30%;
+  }
+  main .lowCaroussel .lowCaroussel-flexCont .lowCaroussel-flex h5::before {
+    display: none;
+  }
+  main .lowCaroussel #lowCaroussel-button2,
+  main #lowCaroussel-button1 {
+    display: none;
+  }
+  main .listContainer {
+    margin-left: 7%;
+  }
+  main .listSection h6 {
+    text-align: center;
+    margin: 0;
+  }
+  footer {
+    height: 100%;
+  }
+  footer a {
+    -webkit-transform: translateX(33vw);
+            transform: translateX(33vw);
+  }
+  footer .imageCont {
+    margin-left: 32vw;
+  }
+  footer .imageCont div {
+    margin: 0 1vw;
+    -webkit-transform: translateY(4vw);
+            transform: translateY(4vw);
+  }
+  footer img {
+    width: 4vw;
+  }
+  footer .imageCont div:nth-child(5) img {
+    width: 7vw;
+    margin-top: 1vw;
   }
   footer p {
     line-height: 3vh;

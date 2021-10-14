@@ -1,4 +1,4 @@
-@media all and (max-width: 475px) {
+@media all and (max-width: 700px) {
   main {
     .mainPics {
       .stardewValley {
@@ -37,6 +37,7 @@
       .cont {
         transform: translateX(32.5vw) scale(1.6);
         margin-bottom: 0em;
+        gap: 0.2em;
 
         i {
           display: none;
@@ -62,7 +63,7 @@
   }
 
   table {
-    margin-left: -3vw;
+    margin-left: -2vw;
     border-spacing: 1em;
   }
   table th .flexcont {
@@ -148,6 +149,181 @@
     }
     .imageCont div:nth-child(5) img {
       width: 12vw; //pegi
+    }
+    p {
+      line-height: 3vh;
+      margin: 0;
+    }
+  }
+}
+
+@media all and (min-width: 476px) and (max-width: 700px) {
+  main {
+    .gridContainer .cont {
+      padding-top: 2em;
+    }
+    .gridContainer .buttonCont {
+      transform: translateX(37vw);
+      margin-bottom: -4vh;
+    }
+    .maintext :last-child {
+      transform: translateX(0vw);
+    }
+    table {
+      margin-right: 0;
+
+      th {
+        padding-right: 30vw;
+        #pegiRating {
+          top: -16vh;
+        }
+        #pegi {
+          top: -18vh;
+        }
+      }
+    }
+    table tr:nth-child(5) span {
+      top: -5.5vh;
+      margin-left: 0;
+    }
+    table tr:nth-child(6) img {
+      margin-left: auto;
+      margin-right: auto;
+      display: block;
+    }
+    .small-Text-Under-Table {
+      margin: 10vh auto;
+    }
+    .lowCaroussel .lowCaroussel-flexCont .lowCaroussel-flex {
+      flex-basis: 40vw;
+    }
+    .listSection h6 {
+      margin-left: 0;
+      text-align: center;
+    }
+  }
+  footer a {
+    transform: translateX(29vw);
+  }
+  footer img {
+    width: 5vw;
+  }
+  footer .imageCont div:nth-child(5) img {
+    width: 9vw;
+  }
+  footer .imageCont {
+    margin-left: 31vw;
+  }
+}
+
+@media all and (min-width: 768px) and (max-width: 1000px) {
+  main {
+    .mainPics .pegi {
+      width: 7vw;
+      top: 32vw;
+      right: 8.5vw;
+    }
+
+    .gridContainer {
+      padding: 4vw 0;
+      .buttonCont {
+        transform: translateX(39vw);
+      }
+    }
+    .gridContainer .cont {
+      margin-bottom: -4em;
+      transform: translateX(20vw);
+    }
+
+    table {
+      margin-left: 0.5vw;
+      width: 99vw;
+    }
+    table th .flexcont {
+      width: 5em;
+      flex-direction: column;
+    }
+    table th .flexcont img {
+      padding: 2vw 0vw;
+      transform: translateX(16vw);
+    }
+    table th #pegiRating {
+      top: -20.75vw;
+      margin-left: -6em;
+    }
+    table th #pegi {
+      right: 10vw;
+      top: -17vw;
+    }
+    table th #pegi-Rating-P {
+      top: -17vw;
+      position: relative;
+    }
+    table tr:nth-child(5) span {
+      margin-left: -7em;
+      top: -4vw;
+    }
+    table tr:nth-child(6) img {
+      transform: translateX(15vw);
+    }
+    table tr:nth-child(6) a {
+      display: block;
+      margin-top: 4vw;
+      transform: translateX(4vw);
+      text-align: center;
+    }
+    table tr:nth-child(6) span {
+      margin: 2vw 0;
+      transform: translateX(14vw);
+      text-align: center;
+    }
+    table .flexContLastTr {
+      transform: translateX(7vw);
+      button {
+        padding: 2vw 6vw;
+      }
+    }
+    .lowCaroussel .lowCaroussel-flexCont {
+      overflow-x: scroll;
+      width: auto;
+    }
+    .lowCaroussel .lowCaroussel-flexCont .lowCaroussel-flex {
+      flex-shrink: 0;
+      flex-basis: 30%;
+      h5::before {
+        display: none;
+      }
+    }
+    .lowCaroussel #lowCaroussel-button2,
+    #lowCaroussel-button1 {
+      display: none;
+    }
+    .listContainer {
+      margin-left: 7%;
+    }
+    .listSection h6 {
+      text-align: center;
+      margin: 0;
+    }
+  }
+  footer {
+    height: 100%;
+    a {
+      transform: translateX(33vw);
+    }
+    .imageCont {
+      margin-left: 32vw;
+    }
+    .imageCont div {
+      margin: 0 1vw;
+      transform: translateY(4vw);
+    }
+    img {
+      width: 4vw;
+    }
+    .imageCont div:nth-child(5) img {
+      width: 7vw; //pegi
+      margin-top: 1vw;
     }
     p {
       line-height: 3vh;
