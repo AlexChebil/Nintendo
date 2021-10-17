@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   font-family: "MuseoModerno", cursive;
   scroll-behavior: smooth;
 }
@@ -23,7 +23,8 @@ button {
   -webkit-transition: -webkit-transform 0.4s cubic-bezier(0.68, -0.6, 0.32, 1.6);
   transition: -webkit-transform 0.4s cubic-bezier(0.68, -0.6, 0.32, 1.6);
   transition: transform 0.4s cubic-bezier(0.68, -0.6, 0.32, 1.6);
-  transition: transform 0.4s cubic-bezier(0.68, -0.6, 0.32, 1.6), -webkit-transform 0.4s cubic-bezier(0.68, -0.6, 0.32, 1.6);
+  transition: transform 0.4s cubic-bezier(0.68, -0.6, 0.32, 1.6),
+    -webkit-transform 0.4s cubic-bezier(0.68, -0.6, 0.32, 1.6);
 }
 
 a {
@@ -92,8 +93,8 @@ nav .searchWall .searchWall-flexContainer {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  -ms-flex-pack: space-evenly;
+  justify-content: space-evenly;
   padding-top: 5em;
 }
 
@@ -120,7 +121,7 @@ nav .searchWall .cards :nth-child(2) {
 
 nav .searchWall .cards :nth-child(2):hover {
   -webkit-box-shadow: 0px 0px 5px 3px #ffd000;
-          box-shadow: 0px 0px 5px 3px #ffd000;
+  box-shadow: 0px 0px 5px 3px #ffd000;
 }
 
 nav .searchWall .cards :nth-child(3) {
@@ -131,7 +132,7 @@ nav .searchWall .cards :nth-child(3) {
 
 nav .searchWall .cards :nth-child(3):hover {
   -webkit-box-shadow: 0px 0px 5px 3px cyan;
-          box-shadow: 0px 0px 5px 3px cyan;
+  box-shadow: 0px 0px 5px 3px cyan;
 }
 
 nav .searchWall .cards :nth-child(4) {
@@ -142,7 +143,7 @@ nav .searchWall .cards :nth-child(4) {
 
 nav .searchWall .cards :nth-child(4):hover {
   -webkit-box-shadow: 0px 0px 5px 0.5px #e60012;
-          box-shadow: 0px 0px 5px 0.5px #e60012;
+  box-shadow: 0px 0px 5px 0.5px #e60012;
 }
 
 nav .searchWall .cards h5 {
@@ -163,7 +164,7 @@ nav .searchWall .card {
 nav .searchWall .card p {
   font-size: 1.25em;
   -webkit-transform: translateY(1.5em);
-          transform: translateY(1.5em);
+  transform: translateY(1.5em);
   font-weight: bolder;
 }
 
@@ -177,11 +178,11 @@ nav .flexContainer {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   -webkit-box-align: baseline;
-      -ms-flex-align: baseline;
-          align-items: baseline;
+  -ms-flex-align: baseline;
+  align-items: baseline;
 }
 
 nav .flexContainer button {
@@ -191,7 +192,7 @@ nav .flexContainer button {
 nav .flexContainer a {
   padding: 0em 0.5em;
   -webkit-transform: translateY(5em);
-          transform: translateY(5em);
+  transform: translateY(5em);
 }
 
 nav .flexContainer a i {
@@ -203,8 +204,8 @@ nav .flexContainer a i {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   border: 1px solid #efefef;
 }
 
@@ -254,7 +255,7 @@ nav .flexContainer a i {
 .bottomPart ul li {
   display: inline-block;
   -webkit-transform: translateX(20em);
-          transform: translateX(20em);
+  transform: translateX(20em);
   margin: 0 3%;
   text-align: center;
   cursor: pointer;
@@ -266,7 +267,7 @@ nav .flexContainer a i {
 
 .bottomPart .secondUl li {
   -webkit-transform: translateX(30em);
-          transform: translateX(30em);
+  transform: translateX(30em);
   margin: 0 2vw;
 }
 
@@ -285,7 +286,7 @@ main {
   width: 65vw;
   margin-left: 18vw;
   -webkit-transform: translateY(4vw);
-          transform: translateY(4vw);
+  transform: translateY(4vw);
 }
 
 .mainPics .pegi {
@@ -301,7 +302,7 @@ main {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: distribute;
-      justify-content: space-around;
+  justify-content: space-around;
   background-color: #ffffff;
 }
 
@@ -315,7 +316,7 @@ main {
   font-size: 1.5em;
   margin-left: 3.5em;
   -webkit-transform: translateY(0.1em);
-          transform: translateY(0.1em);
+  transform: translateY(0.1em);
 }
 
 .textContainer .coins {
@@ -348,7 +349,7 @@ main {
 .gridContainer i {
   position: absolute;
   -webkit-transform: translateX(-5vw) translateY(4vw);
-          transform: translateX(-5vw) translateY(4vw);
+  transform: translateX(-5vw) translateY(4vw);
   font-size: 2em;
   color: #ffffff;
   display: none;
@@ -356,44 +357,42 @@ main {
 
 .gridContainer .buttonCont {
   -webkit-transform: translateX(37vw);
-          transform: translateX(37vw);
+  transform: translateX(37vw);
 }
 
 .gridContainer .buttonCont button {
   margin: 0 2em;
   padding: 0.5em;
   -webkit-clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
-          clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+  clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
   -webkit-transform: rotate(-90deg) scale(3);
-          transform: rotate(-90deg) scale(3);
+  transform: rotate(-90deg) scale(3);
   border-radius: 25%;
 }
 
 .gridContainer .buttonCont :last-child {
   -webkit-transform: rotate(90deg) scale(3);
-          transform: rotate(90deg) scale(3);
+  transform: rotate(90deg) scale(3);
 }
 
 .gridContainer .buttonCont #button1:hover {
   -webkit-transform: rotate(-90deg) scale(4.5);
-          transform: rotate(-90deg) scale(4.5);
+  transform: rotate(-90deg) scale(4.5);
 }
 
 .gridContainer .buttonCont #button2:hover {
   -webkit-transform: rotate(90deg) scale(4.5);
-          transform: rotate(90deg) scale(4.5);
+  transform: rotate(90deg) scale(4.5);
 }
 
 .gridContainer .cont {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr)[10];
-      grid-template-columns: repeat(10, 1fr);
-  -ms-grid-rows: (1fr)[3];
-      grid-template-rows: repeat(3, 1fr);
+  grid-template-columns: repeat(10, 1fr);
+  grid-template-rows: repeat(3, 1fr);
   gap: 0.5em;
   -webkit-transform: translateX(14vw);
-          transform: translateX(14vw);
+  transform: translateX(14vw);
   margin-bottom: -8em;
 }
 
@@ -401,7 +400,7 @@ main {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
 }
@@ -409,13 +408,13 @@ main {
 .gridContainer .cont .big {
   grid-column: span 4 / auto;
   -ms-grid-row: 1;
-      grid-row-start: 1;
+  grid-row-start: 1;
   grid-row-end: 3;
 }
 
 .gridContainer .cont .big i {
   -webkit-transform: translateX(-17.5vw) translateY(9.5vw);
-          transform: translateX(-17.5vw) translateY(9.5vw);
+  transform: translateX(-17.5vw) translateY(9.5vw);
 }
 
 .gridContainer .cont .smalltop {
@@ -424,7 +423,7 @@ main {
 
 .gridContainer .cont .apart {
   -ms-grid-column: 7;
-      grid-column-start: 7;
+  grid-column-start: 7;
   grid-column-end: 11;
   grid-row: span 2 / auto;
   opacity: 0;
@@ -434,7 +433,7 @@ main {
 
 .gridContainer .cont .apart i {
   -webkit-transform: translateX(-17.5vw) translateY(9.5vw);
-          transform: translateX(-17.5vw) translateY(9.5vw);
+  transform: translateX(-17.5vw) translateY(9.5vw);
 }
 
 .gridContainer .cont a {
@@ -444,7 +443,7 @@ main {
 
 .gridContainer .cont .square {
   -ms-grid-row: 2;
-      grid-row-start: 2;
+  grid-row-start: 2;
 }
 
 .maintext {
@@ -484,7 +483,7 @@ table {
 
 table tr:nth-child(5) {
   -webkit-transform: translateY(1vw);
-          transform: translateY(1vw);
+  transform: translateY(1vw);
 }
 
 table tr:nth-child(5) span {
@@ -496,7 +495,7 @@ table tr:nth-child(5) span {
 
 table tr:nth-child(6) {
   -webkit-transform: translateY(2vw);
-          transform: translateY(2vw);
+  transform: translateY(2vw);
 }
 
 table tr:nth-child(6) img {
@@ -551,7 +550,7 @@ table th #pegiRating {
 
 table th #pegi-Rating-P {
   -webkit-transform: translateX(1.5vw);
-          transform: translateX(1.5vw);
+  transform: translateX(1.5vw);
   width: 135%;
 }
 
@@ -568,7 +567,7 @@ table th .flexcont img {
 
 table th .Supported-Play-Modes-P {
   -webkit-transform: translateX(3vw);
-          transform: translateX(3vw);
+  transform: translateX(3vw);
   width: 135%;
 }
 
@@ -629,8 +628,8 @@ table i {
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
   margin-top: 5vw;
   width: 200%;
   -webkit-transition: all 1s ease-in-out;
@@ -711,7 +710,7 @@ table i {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
   margin-left: 25%;
 }
 
@@ -740,7 +739,7 @@ footer a {
   color: #efefef;
   display: inline-block;
   -webkit-transform: translateX(42.5vw);
-          transform: translateX(42.5vw);
+  transform: translateX(42.5vw);
   margin: 0 1vw;
 }
 
@@ -764,13 +763,13 @@ footer .imageCont {
 footer .imageCont div {
   margin: 0 0.25vw;
   -webkit-transform: translateY(2vw);
-          transform: translateY(2vw);
+  transform: translateY(2vw);
 }
 
 footer .imageCont div:nth-child(5) {
   margin: 0 1vw;
   -webkit-transform: none;
-          transform: none;
+  transform: none;
 }
 
 footer .imageCont div:nth-child(5) img {

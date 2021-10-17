@@ -544,4 +544,17 @@
             transform: translateX(40.5vw);
   }
 }
+
+@media all and (min-width: 1401px) and (max-width: 1800px) {
+  main .gridContainer .cont {
+    margin-bottom: -7em;
+  }
+  main table th .flexcont img {
+    padding: 0 3vw;
+  }
+  main .lowCaroussel #lowCaroussel-button1,
+  main .lowCaroussel #lowCaroussel-button2 {
+    top: 226vw;
+  }
+}
 /*# sourceMappingURL=MediaQMain.css.map */
